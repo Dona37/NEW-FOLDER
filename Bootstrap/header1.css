@@ -1,0 +1,16 @@
+.btn.btn-primary.dropdown-toggle{
+    background: #00A5EC;
+    border-radius: 3px;
+    border: 1px solid #008BDC;
+    color: #fff;
+    margin-left: 16px;
+    width:125px
+}
+.btn.btn-primary {
+    background: #fff;
+    border: 1px solid #008BDC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #008BDC;
+    width:85px
+}
