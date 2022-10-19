@@ -9,7 +9,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="09_personal_details.css" >
+</head>
   <body>                      
     <div class="container-fluid" id="content" style="padding-bottom: 552px;">
     <div class="max-width-container">
@@ -23,10 +25,10 @@
                     <form role="form" novalidate="novalidate" id="personal_details" name="registration" enctype="multipart/form-data" method="POST">
                         <div class="input_fields_container ">
                             <input type="hidden" value="dashboard" name="referral">
-                            <input type="hidden" id="personal_details_resume_first_name" value="EDU">
-                            <input type="hidden" id="personal_details_resume_last_name" value="WAY">
+                            <input type="hidden" id="personal_details_resume_first_name"value="">
+                            <input type="hidden" id="personal_details_resume_last_name"value="">
                             <input type="hidden" id="personal_details_resume_gender" value="">
-                            <input type="hidden" id="personal_details_resume_email" value="aswinsreekumar84@gmail.com">
+                            <input type="hidden" id="personal_details_resume_email" value="">
                             <input type="hidden" id="personal_details_resume_country_code" value="+91">
                             <input type="hidden" id="personal_details_resume_phone_primary" value="">
                             <input type="hidden" id="personal_details_resume_current_city" value="">
@@ -42,11 +44,11 @@
                             <div class="input-group name_container">
                                 <div class="form-group first_name_container has-error">
                                     <label for="first_name" class="control-label">First name</label>
-                                    <input class="form-control first_name error" id="first_name" tabindex="2" name="first_name" placeholder="First name" value="EDU" type="text" autocomplete="none" aria-required="true" aria-invalid="true"><label id="first_name-error" class="help-block form-error" for="first_name">This field is required</label>
+                                    <input class="form-control first_name error" id="first_name" tabindex="2" name="first_name" placeholder="First name" value="" type="text" autocomplete="none" aria-required="true" aria-invalid="true"><label id="first_name-error" class="help-block form-error" for="first_name">This field is required</label>
                                 </div>
                                 <div class="form-group last_name_container has-success">
                                     <label for="last_name" class="control-label">Last name</label>
-                                    <input class="form-control last_name valid" id="last_name" tabindex="3" name="last_name" placeholder="Last name" value="WAY" type="text" autocomplete="none" aria-invalid="false"><label id="last_name-error" class="help-block form-error" for="last_name" style="display: inline-block;"></label>
+                                    <input class="form-control last_name valid" id="last_name" tabindex="3" name="last_name" placeholder="Last name" value="" type="text" autocomplete="none" aria-invalid="false"><label id="last_name-error" class="help-block form-error" for="last_name" style="display: inline-block;"></label>
                                 </div>
                             </div>
                     
@@ -58,16 +60,17 @@
                                     <option value="female">Female</option>
                                     <option value="other">Other</option>
                                     <option value="undesirous">Prefer not to say</option>
-                                </select><div class="chosen-container chosen-container-single" title="" id="gender_chosen" style="width: 598px;"><a class="chosen-single chosen-default">
-                      <span>Select</span>
-                      <div><b></b></div>
-                    </a>
-                    <div class="chosen-drop">
-                      <div class="chosen-search">
-                        <input class="chosen-search-input" type="text" autocomplete="off" tabindex="1">
-                      </div>
-                      <ul class="chosen-results"></ul>
-                    </div></div>
+                                </select>
+                                <div class="chosen-container chosen-container-single chosen-container-active chosen-with-drop" title="" id="gender_chosen" style="width: 598px;"><a class="chosen-single chosen-default">
+                                    <span>Select</span>
+                                    <div><b></b></div>
+                                  </a>
+                                  <div class="chosen-drop">
+                                    <div class="chosen-search">
+                                      <input class="chosen-search-input valid" type="text" autocomplete="none" tabindex="1" aria-invalid="false">
+                                    </div>
+                                    <ul class="chosen-results"><li class="active-result" data-option-array-index="1">Male</li><li class="active-result" data-option-array-index="2">Female</li><li class="active-result" data-option-array-index="3">Other</li><li class="active-result" data-option-array-index="4">Prefer not to say</li></ul>
+                                  </div></div>
                                 <div id="gender_container"></div>
                             </div>
                     
@@ -118,7 +121,7 @@
                             </div>
                     
                             <div class="preferred-language form-group">
-                                <div class="heading">
+                                <div class="heading1">
                                     Preferred language of learning
                                 </div>
                                 <div class="radio-buttons">
