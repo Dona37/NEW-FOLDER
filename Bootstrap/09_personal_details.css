@@ -1,0 +1,31 @@
+.container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.max-width-container {
+    max-width: 1224px;
+}
+.max-width-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+.panel_parent_layout {
+    margin: 48px auto;
+    max-width: 648px;
+}
+.panel_parent_layout .page_heading, .skill-subheading {
+    text-align: center;
+}
+.heading_2_3_page_heading {
+    font-size: 28px;
+    line-height: 1.28571429;
+    font-weight: 600;
+}
+#personal-details-container {
+    margin-top: 24px;
+}
+.heading{
+    font-size: 50px;
+    line-height: 1.28571429;
+    font-weight: 600; 
+}
