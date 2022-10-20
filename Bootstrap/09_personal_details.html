@@ -53,32 +53,22 @@
                             </div>
                     
                             <div class="form-group gender_container">
-                                <label for="gender" class="control-label">Gender</label>
-                                <select class="form-control gender chosen-select" id="gender" tabindex="-1" name="gender" data-placeholder="Select" required="" aria-required="true" style="display: none;">
+                                <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select class="form-control gender chosen-select" id="gender" tabindex="-1" name="gender" data-placeholder="Select" required="" aria-required="true">
                                     <option value=""></option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                     <option value="other">Other</option>
                                     <option value="undesirous">Prefer not to say</option>
                                 </select>
-                                <div class="chosen-container chosen-container-single chosen-container-active chosen-with-drop" title="" id="gender_chosen" style="width: 598px;"><a class="chosen-single chosen-default">
-                                    <span>Select</span>
-                                    <div><b></b></div>
-                                  </a>
-                                  <div class="chosen-drop">
-                                    <div class="chosen-search">
-                                      <input class="chosen-search-input valid" type="text" autocomplete="none" tabindex="1" aria-invalid="false">
-                                    </div>
-                                    <ul class="chosen-results"><li class="active-result" data-option-array-index="1">Male</li><li class="active-result" data-option-array-index="2">Female</li><li class="active-result" data-option-array-index="3">Other</li><li class="active-result" data-option-array-index="4">Prefer not to say</li></ul>
-                                  </div></div>
-                                <div id="gender_container"></div>
-                            </div>
+                              
                     
                             <div class="form-group" id="email_container" style="display: none;">
                                 <label for="email" class="control-label">Email</label>
                                 <input type="text" class="form-control" id="email" tabindex="4" name="email" placeholder="Your email" value="aswinsreekumar84@gmail.com" readonly="readonly" disabled="disabled">
                                         </div>
-                    
+                    <br>
                             <div class="input-group phone_primary_container_outer">
                                 <label for="phone_primary" class="control-label">
                                     Mobile number
@@ -87,8 +77,8 @@
                                     <div class="form-group country_code_container">
                                         <input type="text" class="form-control country-code" tabindex="5" id="country_code" name="country_code" placeholder="County code" value="+91">
                                     </div>
-                                    <div class="form-group phone_primary_container">
-                                        <input type="number" class="form-control mobile-number" tabindex="6" id="phone_primary" name="phone_primary" placeholder="Your 10 digit mobile number " value="" autocomplete="none">
+                                    <div class="form-group phone_primary_container has-error">
+                                        <input type="text" class="form-control mobile-number error" tabindex="6" id="phone_primary" name="phone_primary" placeholder="Your 10 digit mobile number " value="" autocomplete="none" aria-required="true" aria-invalid="true"><label id="phone_primary-error" class="help-block form-error" for="phone_primary">This field is required</label>
                                     </div>
                                 </div>
                             </div>

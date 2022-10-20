@@ -66,3 +66,80 @@
 .chosen-container a {
     cursor: pointer;
 }
+#personal_details .phone_primary_container_outer #phone_primary_container .phone_primary_container {
+    flex-grow: 1;
+}
+.input_fields_container .form-group:nth-last-of-type(1) {
+    margin-bottom: 0;
+    --scrollbar-width: 17px;
+}
+.input[type=number] {
+    -webkit-appearance: none;
+}
+.form-control {
+    padding: 11px;
+    background: #fff;
+    color: #484848;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    font-size: 14px;
+    height: 40px;
+    font-family: Inter,sans-serif;
+}
+.form-control, .has_cross_and_button {
+    line-height: 1.14285714;
+    box-shadow: none;
+}
+.form-control {
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    font-weight: 400;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input {
+    border-radius: 3px!important;
+}
+input {
+    writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-stretch: ;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+}
+.has-error .form-error:not(:empty) {
+    display: inline-block!important;
+}
+.has-error .help-block {
+    font-size: 12px;
+    color: #E5330E;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+label {
+    font-weight: 500;
+}
+.country_code_container {
+    width: 110px;
+    margin-right: 8px;
+}
+.form-group {
+    clear: both;
+    margin-bottom: 16px;
+}
+body {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.57142857;
+    font-weight: 400;
+}
