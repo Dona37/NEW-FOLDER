@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <link href="13_preferences.css"type="text/css" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Custom CSS -->
+    <link rel="stylesheet" href="09_personal_details.css" >
+</head>
+  <body>
+    <div class="container-fluid" id="content" style="padding-bottom: 908px;">
+        <div class="max-width-container">
+            <div id="content-inner">
+                <div class="panel_parent_layout">
+                    
+                    <div class="heading_2_3_page_heading">
+                        Preferences
+                    </div>
+                    
+    <div id="preferences-container">
+        <form name="preference_form" class="user_preference_form" id="preference_form" enctype="multipart/form-data" method="POST" novalidate="novalidate">
+            <div class="input_fields_container">
+                <div class="preference_type_heading">
+                    Currently looking for
+                </div>
+                <div id="preferenceType">
+                    <div class="form-group preference_type_radio_container internship_container">
+                        <div class="radio">
+                            <input type="radio" name="preference_type" value="internship" id="internship" aria-required="true" aria-invalid="false" class="valid">
+                            <label for="internship">
+                                Internships
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group preference_type_radio_container job_container">
+                                    <div class="radio">
+                                        <input type="radio" name="preference_type" value="job" id="job">
+                                        <label for="job">
+                                            Jobs
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+    
+                <div id="employment_type_sub_preference_container">
+                    <div id="type_of_internship" class="type_container form-group"style="">
+                        <div class="heading1">
+                            Type of internships
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <input type="checkbox" name="internship_preference_type[]" value="full-time" id="full-time">
+                                <label for="full-time">
+                                    In-office
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="internship_preference_type[]" value="part-time" id="part-time">
+                                <label for="part-time">
+                                    Work from home
+                                </label>
+                                <div id="internship_preference_type_error"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="type_of_job" class="type_container" style="display: none">
+                        <div class="heading">
+                            Type of jobs
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <input type="checkbox" name="internship_preference_type[]" value="full-time" id="full-time">
+                                <label for="full-time">
+                                    In-office
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="internship_preference_type[]" value="part-time" id="part-time">
+                                <label for="part-time">
+                                    Work from home
+                                </label>
+                                <div id="internship_preference_type_error"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="jobRelocate" style="display: block;">
+                        <div class="heading123">
+                            Are you willing to relocate?
+                        </div>
+                        <div class="form-group has-success">
+                            <div class="radio">
+                                <input type="radio" id="job_relocate_yes" name="job_relocate" value="yes" aria-required="true" aria-invalid="false" class="valid">
+                                <label for="job_relocate_yes">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" id="job_relocate_no" name="job_relocate" value="no" class="valid" aria-invalid="false">
+                                <label class="job_relocate_no" for="job_relocate_no">
+                                    No
+                                </label>
+                            </div>
+                            <div id="job_relocate_error"><label id="job_relocate-error" class="help-block form-error" for="job_relocate" style="display: inline-block;"></label></div>
+                        </div>
+                    </div>
+                        <div id="preference_input_outer" class="chosen_container_outer" style="">
+                            <div class="heading12">
+                                Fields of interest 
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option class="Select your 1st preference" value=""> Select your 1st preference </option>
+                                    <option class="Architecture prefOption" value="Architecture"> Architecture </option>
+                                    <option class="Interior_Design prefOption" value="Interior Design"> Interior Design </option>
+                                    <option class="Business_MBA prefOption" value="" disabled=""> Business/MBA </option>
+                                    <option class="Client_Servicing prefOption" value="Client Servicing"> Client Servicing </option>
+                                    <option class="Data_Entry prefOption" value="Data Entry"> Data Entry </option>
+                                    <option class="Digital_Marketing prefOption" value="Digital Marketing"> Digital Marketing </option>
+                                    <option class="Finance prefOption" value="Finance"> Finance </option>
+                                    <option class="General_Management prefOption" value="General Management"> General Management </option>
+                                    <option class="HR prefOption" value="HR"> Human Resources (HR) </option>
+                                    <option class="Market_Business_Research prefOption" value="Market/Business Research"> Market/Business Research </option>
+                                    <option class="Marketing_Sales prefOption" value="Marketing/Sales"> Marketing/Sales </option>
+                                    <option class="Operations prefOption" value="Operations"> Operations </option>
+                                    <option class="Project_Management_ prefOption" value="Project Management "> Project Management  </option>
+                                    <option class="Search_Engine_Optimization__SEO_ prefOption" value="Search Engine Optimization (SEO)"> Search Engine Optimization (SEO) </option>
+                                    <option class="Social_Media_Marketing prefOption" value="Social Media Marketing"> Social Media Marketing </option>
+                                    <option class="Telecalling prefOption" value="Telecalling"> Telecalling </option>
+                                    <option class="Commerce prefOption" value="" disabled=""> Commerce </option>
+                                    <option class="Accounts prefOption" value="Accounts"> Accounts </option>
+                                    <option class="Chartered_Accountancy__CA_ prefOption" value="Chartered Accountancy (CA)"> Chartered Accountancy (CA) </option>
+                                    <option class="Company_Secretary__CS_ prefOption" value="Company Secretary (CS)"> Company Secretary (CS) </option>
+                                    <option class="Design prefOption" value="" disabled=""> Design </option>
+                                    <option class="Fashion_Design prefOption" value="Fashion Design"> Fashion Design </option>
+                                    <option class="Graphic_Design prefOption" value="Graphic Design"> Graphic Design </option>
+                                    <option class="Merchandise_Design prefOption" value="Merchandise Design"> Merchandise Design </option>
+                                    <option class="UI_UX prefOption" value="UI/UX"> UI/UX Design </option>
+                                    <option class="Engineering prefOption" value="" disabled=""> Engineering </option>
+                                    <option class="Aerospace prefOption" value="Aerospace"> Aerospace Engineering </option>
+                                    <option class="Android_App_Development prefOption" value="Android App Development"> Android App Development </option>
+                                    <option class="Angular_js_Development prefOption" value="Angular.js Development"> Angular.js Development </option>
+                                    <option class="Biotech prefOption" value="Biotech"> Biotechnology Engineering </option>
+                                    <option class="Blockchain_Development prefOption" value="Blockchain Development"> Blockchain Development </option>
+                                    <option class="Chemical prefOption" value="Chemical"> Chemical Engineering </option>
+                                    <option class="Civil prefOption" value="Civil"> Civil Engineering </option>
+                                    <option class="Cloud_Computing prefOption" value="Cloud Computing"> Cloud Computing </option>
+                                    <option class="Computer_Vision prefOption" value="Computer Vision"> Computer Vision </option>
+                                    <option class="Cyber_Security prefOption" value="Cyber Security"> Cyber Security </option>
+                                    <option class="Electrical prefOption" value="Electrical"> Electrical Engineering </option>
+                                    <option class="Electronics prefOption" value="Electronics"> Electronics Engineering </option>
+                                    <option class="Energy_Science_and_Engineering prefOption" value="Energy Science and Engineering"> Energy Science &amp; Engineering </option>
+                                    <option class="Engineering_Design prefOption" value="Engineering Design"> Engineering Design </option>
+                                    <option class="Engineering_Physics prefOption" value="Engineering Physics"> Engineering Physics </option>
+                                    <option class="Flutter_Development prefOption" value="Flutter Development"> Flutter Development </option>
+                                    <option class="Game_Development prefOption" value="Game Development"> Game Development </option>
+                                    <option class="Image_Processing prefOption" value="Image Processing"> Image Processing </option>
+                                    <option class="iOS_App_Development prefOption" value="iOS App Development"> iOS App Development </option>
+                                    <option class="Javascript_Development prefOption" value="Javascript Development"> Javascript Development </option>
+                                    <option class="Magento_Development prefOption" value="Magento Development"> Magento Development </option>
+                                    <option class="Material_Science prefOption" value="Material Science"> Material Science </option>
+                                    <option class="Mechanical prefOption" value="Mechanical"> Mechanical Engineering </option>
+                                    <option class="Metallurgy prefOption" value="Metallurgy"> Metallurgical Engineering </option>
+                                    <option class="Mobile_App_Development prefOption" value="Mobile App Development"> Mobile App Development </option>
+                                    <option class="Naval_and_Ocean prefOption" value="Naval and Ocean"> Naval Architecture and Ocean Engineeering </option>
+                                    <option class="Network_Engineering prefOption" value="Network Engineering"> Network Engineering </option>
+                                    <option class="Node_js_Development prefOption" value="Node.js Development"> Node.js Development </option>
+                                    <option class="Petroleum_Engineering prefOption" value="Petroleum Engineering"> Petroleum Engineering </option>
+                                    <option class="PHP_Development prefOption" value="PHP Development"> PHP Development </option>
+                                    <option class="Programming prefOption" value="Programming"> Programming </option>
+                                    <option class="Python_Django prefOption" value="Python/Django"> Python/Django Development </option>
+                                    <option class="Ruby_on_Rails prefOption" value="Ruby on Rails"> Ruby on Rails </option>
+                                    <option class="Software_Development prefOption" value="Software Development"> Software Development </option>
+                                    <option class="Software_Testing prefOption" value="Software Testing"> Software Testing </option>
+                                    <option class="Web_Development prefOption" value="Web Development"> Web Development </option>
+                                    <option class="Wordpress_Development prefOption" value="Wordpress Development"> Wordpress Development </option>
+                                    <option class="Hospitality prefOption" value="" disabled=""> Hospitality </option>
+                                    <option class="Culinary_Arts prefOption" value="Culinary Arts"> Culinary Arts </option>
+                                    <option class="Hotel_Management prefOption" value="Hotel Management"> Hotel Management </option>
+                                    <option class="Travel_and_Tourism prefOption" value="Travel and Tourism"> Travel &amp; Tourism </option>
+                                    <option class="Media prefOption" value="" disabled=""> Media </option>
+                                    <option class="Anchoring prefOption" value="Anchoring"> Anchoring </option>
+                                    <option class="Animation prefOption" value="Animation"> Animation </option>
+                                    <option class="Audio_Making_Editing prefOption" value="Audio Making/Editing"> Audio Making/Editing </option>
+                                    <option class="Cinematography prefOption" value="Cinematography"> Cinematography </option>
+                                    <option class="Content_Writing prefOption" value="Content Writing"> Content Writing </option>
+                                    <option class="Film_Making prefOption" value="Film Making"> Film Making </option>
+                                    <option class="Journalism prefOption" value="Journalism"> Journalism </option>
+                                    <option class="Motion_Graphics prefOption" value="Motion Graphics"> Motion Graphics </option>
+                                    <option class="Photography prefOption" value="Photography"> Photography </option>
+                                    <option class="PR prefOption" value="PR"> Public Relations (PR) </option>
+                                    <option class="Proofreading prefOption" value="Proofreading"> Proofreading </option>
+                                    <option class="Transcription prefOption" value="Transcription"> Transcription </option>
+                                    <option class="Translation prefOption" value="Translation"> Translation </option>
+                                    <option class="Video_Making_Editing prefOption" value="Video Making/Editing"> Video Making/Editing </option>
+                                    <option class="Videography prefOption" value="Videography"> Videography </option>
+                                    <option class="Science prefOption" value="" disabled=""> Science </option>
+                                    <option class="Biology prefOption" value="Biology"> Biology </option>
+                                    <option class="Chemistry prefOption" value="Chemistry"> Chemistry </option>
+                                    <option class="Dietetics_Nutrition prefOption" value="Dietetics/Nutrition"> Dietetics/Nutrition </option>
+                                    <option class="Mathematics prefOption" value="Mathematics"> Mathematics </option>
+                                    <option class="Medicine prefOption" value="Medicine"> Medicine </option>
+                                    <option class="Pharmaceutical prefOption" value="Pharmaceutical"> Pharmaceutical </option>
+                                    <option class="Physics prefOption" value="Physics"> Physics </option>
+                                    <option class="Statistics prefOption" value="Statistics"> Statistics </option>
+                                    <option class="Volunteering prefOption" value="" disabled=""> Volunteering </option>
+                                    <option class="Social_Work prefOption" value="Social Work"> Social Work </option>
+                                    <option class="Others prefOption" value="" disabled=""> Others </option>
+                                    <option class="Acting prefOption" value="Acting"> Acting </option>
+                                    <option class="Agriculture_and_Food_Engineering prefOption" value="Agriculture and Food Engineering"> Agriculture &amp; Food Engineering </option>
+                                    <option class="Campus_Ambassador prefOption" value="Campus Ambassador"> Campus Ambassador </option>
+                                    <option class="Data_Science prefOption" value="Data Science"> Data Science </option>
+                                    <option class="Event_Management prefOption" value="Event Management"> Event Management </option>
+                                    <option class="Humanities prefOption" value="Humanities"> Humanities </option>
+                                    <option class="Law prefOption" value="Law"> Law </option>
+                                    <option class="Music prefOption" value="Music"> Music </option>
+                                    <option class="Product prefOption" value="Product"> Product Management </option>
+                                    <option class="Psychology prefOption" value="Psychology"> Psychology </option>
+                                    <option class="Subject_Matter_Expert__SME_ prefOption" value="Subject Matter Expert (SME)"> Subject Matter Expert (SME) </option>
+                                    <option class="Teaching prefOption" value="Teaching"> Teaching </option></select></div>
+                                
+                                    <div class="form-group">
+                                        <select class="form-control" id="exampleFormControlSelect2">
+                                            <option class="Select your 2nd preference" value=""> Select your 2nd preference </option>
+                                                                            <option class="Architecture prefOption" value="Architecture"> Architecture </option>
+                                                                                    <option class="Interior_Design prefOption" value="Interior Design"> Interior Design </option>
+                                                                                    <option class="Business_MBA prefOption" value="" disabled=""> Business/MBA </option>
+                                                                                    <option class="Client_Servicing prefOption" value="Client Servicing"> Client Servicing </option>
+                                                                                    <option class="Data_Entry prefOption" value="Data Entry"> Data Entry </option>
+                                                                                    <option class="Digital_Marketing prefOption" value="Digital Marketing"> Digital Marketing </option>
+                                                                                    <option class="Finance prefOption" value="Finance"> Finance </option>
+                                                                                    <option class="General_Management prefOption" value="General Management"> General Management </option>
+                                                                                    <option class="HR prefOption" value="HR"> Human Resources (HR) </option>
+                                                                                    <option class="Market_Business_Research prefOption" value="Market/Business Research"> Market/Business Research </option>
+                                                                                    <option class="Marketing_Sales prefOption" value="Marketing/Sales"> Marketing/Sales </option>
+                                                                                    <option class="Operations prefOption" value="Operations"> Operations </option>
+                                                                                    <option class="Project_Management_ prefOption" value="Project Management "> Project Management  </option>
+                                                                                    <option class="Search_Engine_Optimization__SEO_ prefOption" value="Search Engine Optimization (SEO)"> Search Engine Optimization (SEO) </option>
+                                                                                    <option class="Social_Media_Marketing prefOption" value="Social Media Marketing"> Social Media Marketing </option>
+                                                                                    <option class="Telecalling prefOption" value="Telecalling"> Telecalling </option>
+                                                                                    <option class="Commerce prefOption" value="" disabled=""> Commerce </option>
+                                                                                    <option class="Accounts prefOption" value="Accounts"> Accounts </option>
+                                                                                    <option class="Chartered_Accountancy__CA_ prefOption" value="Chartered Accountancy (CA)"> Chartered Accountancy (CA) </option>
+                                                                                    <option class="Company_Secretary__CS_ prefOption" value="Company Secretary (CS)"> Company Secretary (CS) </option>
+                                                                                    <option class="Design prefOption" value="" disabled=""> Design </option>
+                                                                                    <option class="Fashion_Design prefOption" value="Fashion Design"> Fashion Design </option>
+                                                                                    <option class="Graphic_Design prefOption" value="Graphic Design"> Graphic Design </option>
+                                                                                    <option class="Merchandise_Design prefOption" value="Merchandise Design"> Merchandise Design </option>
+                                                                                    <option class="UI_UX prefOption" value="UI/UX"> UI/UX Design </option>
+                                                                                    <option class="Engineering prefOption" value="" disabled=""> Engineering </option>
+                                                                                    <option class="Aerospace prefOption" value="Aerospace"> Aerospace Engineering </option>
+                                                                                    <option class="Android_App_Development prefOption" value="Android App Development"> Android App Development </option>
+                                                                                    <option class="Angular_js_Development prefOption" value="Angular.js Development"> Angular.js Development </option>
+                                                                                    <option class="Biotech prefOption" value="Biotech"> Biotechnology Engineering </option>
+                                                                                    <option class="Blockchain_Development prefOption" value="Blockchain Development"> Blockchain Development </option>
+                                                                                    <option class="Chemical prefOption" value="Chemical"> Chemical Engineering </option>
+                                                                                    <option class="Civil prefOption" value="Civil"> Civil Engineering </option>
+                                                                                    <option class="Cloud_Computing prefOption" value="Cloud Computing"> Cloud Computing </option>
+                                                                                    <option class="Computer_Vision prefOption" value="Computer Vision"> Computer Vision </option>
+                                                                                    <option class="Cyber_Security prefOption" value="Cyber Security"> Cyber Security </option>
+                                                                                    <option class="Electrical prefOption" value="Electrical"> Electrical Engineering </option>
+                                                                                    <option class="Electronics prefOption" value="Electronics"> Electronics Engineering </option>
+                                                                                    <option class="Energy_Science_and_Engineering prefOption" value="Energy Science and Engineering"> Energy Science &amp; Engineering </option>
+                                                                                    <option class="Engineering_Design prefOption" value="Engineering Design"> Engineering Design </option>
+                                                                                    <option class="Engineering_Physics prefOption" value="Engineering Physics"> Engineering Physics </option>
+                                                                                    <option class="Flutter_Development prefOption" value="Flutter Development"> Flutter Development </option>
+                                                                                    <option class="Game_Development prefOption" value="Game Development"> Game Development </option>
+                                                                                    <option class="Image_Processing prefOption" value="Image Processing"> Image Processing </option>
+                                                                                    <option class="iOS_App_Development prefOption" value="iOS App Development"> iOS App Development </option>
+                                                                                    <option class="Javascript_Development prefOption" value="Javascript Development"> Javascript Development </option>
+                                                                                    <option class="Magento_Development prefOption" value="Magento Development"> Magento Development </option>
+                                                                                    <option class="Material_Science prefOption" value="Material Science"> Material Science </option>
+                                                                                    <option class="Mechanical prefOption" value="Mechanical"> Mechanical Engineering </option>
+                                                                                    <option class="Metallurgy prefOption" value="Metallurgy"> Metallurgical Engineering </option>
+                                                                                    <option class="Mobile_App_Development prefOption" value="Mobile App Development"> Mobile App Development </option>
+                                                                                    <option class="Naval_and_Ocean prefOption" value="Naval and Ocean"> Naval Architecture and Ocean Engineeering </option>
+                                                                                    <option class="Network_Engineering prefOption" value="Network Engineering"> Network Engineering </option>
+                                                                                    <option class="Node_js_Development prefOption" value="Node.js Development"> Node.js Development </option>
+                                                                                    <option class="Petroleum_Engineering prefOption" value="Petroleum Engineering"> Petroleum Engineering </option>
+                                                                                    <option class="PHP_Development prefOption" value="PHP Development"> PHP Development </option>
+                                                                                    <option class="Programming prefOption" value="Programming"> Programming </option>
+                                                                                    <option class="Python_Django prefOption" value="Python/Django"> Python/Django Development </option>
+                                                                                    <option class="Ruby_on_Rails prefOption" value="Ruby on Rails"> Ruby on Rails </option>
+                                                                                    <option class="Software_Development prefOption" value="Software Development"> Software Development </option>
+                                                                                    <option class="Software_Testing prefOption" value="Software Testing"> Software Testing </option>
+                                                                                    <option class="Web_Development prefOption" value="Web Development"> Web Development </option>
+                                                                                    <option class="Wordpress_Development prefOption" value="Wordpress Development"> Wordpress Development </option>
+                                                                                    <option class="Hospitality prefOption" value="" disabled=""> Hospitality </option>
+                                                                                    <option class="Culinary_Arts prefOption" value="Culinary Arts"> Culinary Arts </option>
+                                                                                    <option class="Hotel_Management prefOption" value="Hotel Management"> Hotel Management </option>
+                                                                                    <option class="Travel_and_Tourism prefOption" value="Travel and Tourism"> Travel &amp; Tourism </option>
+                                                                                    <option class="Media prefOption" value="" disabled=""> Media </option>
+                                                                                    <option class="Anchoring prefOption" value="Anchoring"> Anchoring </option>
+                                                                                    <option class="Animation prefOption" value="Animation"> Animation </option>
+                                                                                    <option class="Audio_Making_Editing prefOption" value="Audio Making/Editing"> Audio Making/Editing </option>
+                                                                                    <option class="Cinematography prefOption" value="Cinematography"> Cinematography </option>
+                                                                                    <option class="Content_Writing prefOption" value="Content Writing"> Content Writing </option>
+                                                                                    <option class="Film_Making prefOption" value="Film Making"> Film Making </option>
+                                                                                    <option class="Journalism prefOption" value="Journalism"> Journalism </option>
+                                                                                    <option class="Motion_Graphics prefOption" value="Motion Graphics"> Motion Graphics </option>
+                                                                                    <option class="Photography prefOption" value="Photography"> Photography </option>
+                                                                                    <option class="PR prefOption" value="PR"> Public Relations (PR) </option>
+                                                                                    <option class="Proofreading prefOption" value="Proofreading"> Proofreading </option>
+                                                                                    <option class="Transcription prefOption" value="Transcription"> Transcription </option>
+                                                                                    <option class="Translation prefOption" value="Translation"> Translation </option>
+                                                                                    <option class="Video_Making_Editing prefOption" value="Video Making/Editing"> Video Making/Editing </option>
+                                                                                    <option class="Videography prefOption" value="Videography"> Videography </option>
+                                                                                    <option class="Science prefOption" value="" disabled=""> Science </option>
+                                                                                    <option class="Biology prefOption" value="Biology"> Biology </option>
+                                                                                    <option class="Chemistry prefOption" value="Chemistry"> Chemistry </option>
+                                                                                    <option class="Dietetics_Nutrition prefOption" value="Dietetics/Nutrition"> Dietetics/Nutrition </option>
+                                                                                    <option class="Mathematics prefOption" value="Mathematics"> Mathematics </option>
+                                                                                    <option class="Medicine prefOption" value="Medicine"> Medicine </option>
+                                                                                    <option class="Pharmaceutical prefOption" value="Pharmaceutical"> Pharmaceutical </option>
+                                                                                    <option class="Physics prefOption" value="Physics"> Physics </option>
+                                                                                    <option class="Statistics prefOption" value="Statistics"> Statistics </option>
+                                                                                    <option class="Volunteering prefOption" value="" disabled=""> Volunteering </option>
+                                                                                    <option class="Social_Work prefOption" value="Social Work"> Social Work </option>
+                                                                                    <option class="Others prefOption" value="" disabled=""> Others </option>
+                                                                                    <option class="Acting prefOption" value="Acting"> Acting </option>
+                                                                                    <option class="Agriculture_and_Food_Engineering prefOption" value="Agriculture and Food Engineering"> Agriculture &amp; Food Engineering </option>
+                                                                                    <option class="Campus_Ambassador prefOption" value="Campus Ambassador"> Campus Ambassador </option>
+                                                                                    <option class="Data_Science prefOption" value="Data Science"> Data Science </option>
+                                                                                    <option class="Event_Management prefOption" value="Event Management"> Event Management </option>
+                                                                                    <option class="Humanities prefOption" value="Humanities"> Humanities </option>
+                                                                                    <option class="Law prefOption" value="Law"> Law </option>
+                                                                                    <option class="Music prefOption" value="Music"> Music </option>
+                                                                                    <option class="Product prefOption" value="Product"> Product Management </option>
+                                                                                    <option class="Psychology prefOption" value="Psychology"> Psychology </option>
+                                                                                    <option class="Subject_Matter_Expert__SME_ prefOption" value="Subject Matter Expert (SME)"> Subject Matter Expert (SME) </option>
+                                                                                    <option class="Teaching prefOption" value="Teaching"> Teaching </option>
+                                                                        </select></div>
+                                                                            <div class="form-group">
+                                                                                <select class="form-control" id="exampleFormControlSelect3">
+                                                                                    <option class="Select your 3rd preference" value=""> Select your 3rd preference </option>
+                                                                            <option class="Architecture prefOption" value="Architecture"> Architecture </option>
+                                                                                    <option class="Interior_Design prefOption" value="Interior Design"> Interior Design </option>
+                                                                                    <option class="Business_MBA prefOption" value="" disabled=""> Business/MBA </option>
+                                                                                    <option class="Client_Servicing prefOption" value="Client Servicing"> Client Servicing </option>
+                                                                                    <option class="Data_Entry prefOption" value="Data Entry"> Data Entry </option>
+                                                                                    <option class="Digital_Marketing prefOption" value="Digital Marketing"> Digital Marketing </option>
+                                                                                    <option class="Finance prefOption" value="Finance"> Finance </option>
+                                                                                    <option class="General_Management prefOption" value="General Management"> General Management </option>
+                                                                                    <option class="HR prefOption" value="HR"> Human Resources (HR) </option>
+                                                                                    <option class="Market_Business_Research prefOption" value="Market/Business Research"> Market/Business Research </option>
+                                                                                    <option class="Marketing_Sales prefOption" value="Marketing/Sales"> Marketing/Sales </option>
+                                                                                    <option class="Operations prefOption" value="Operations"> Operations </option>
+                                                                                    <option class="Project_Management_ prefOption" value="Project Management "> Project Management  </option>
+                                                                                    <option class="Search_Engine_Optimization__SEO_ prefOption" value="Search Engine Optimization (SEO)"> Search Engine Optimization (SEO) </option>
+                                                                                    <option class="Social_Media_Marketing prefOption" value="Social Media Marketing"> Social Media Marketing </option>
+                                                                                    <option class="Telecalling prefOption" value="Telecalling"> Telecalling </option>
+                                                                                    <option class="Commerce prefOption" value="" disabled=""> Commerce </option>
+                                                                                    <option class="Accounts prefOption" value="Accounts"> Accounts </option>
+                                                                                    <option class="Chartered_Accountancy__CA_ prefOption" value="Chartered Accountancy (CA)"> Chartered Accountancy (CA) </option>
+                                                                                    <option class="Company_Secretary__CS_ prefOption" value="Company Secretary (CS)"> Company Secretary (CS) </option>
+                                                                                    <option class="Design prefOption" value="" disabled=""> Design </option>
+                                                                                    <option class="Fashion_Design prefOption" value="Fashion Design"> Fashion Design </option>
+                                                                                    <option class="Graphic_Design prefOption" value="Graphic Design"> Graphic Design </option>
+                                                                                    <option class="Merchandise_Design prefOption" value="Merchandise Design"> Merchandise Design </option>
+                                                                                    <option class="UI_UX prefOption" value="UI/UX"> UI/UX Design </option>
+                                                                                    <option class="Engineering prefOption" value="" disabled=""> Engineering </option>
+                                                                                    <option class="Aerospace prefOption" value="Aerospace"> Aerospace Engineering </option>
+                                                                                    <option class="Android_App_Development prefOption" value="Android App Development"> Android App Development </option>
+                                                                                    <option class="Angular_js_Development prefOption" value="Angular.js Development"> Angular.js Development </option>
+                                                                                    <option class="Biotech prefOption" value="Biotech"> Biotechnology Engineering </option>
+                                                                                    <option class="Blockchain_Development prefOption" value="Blockchain Development"> Blockchain Development </option>
+                                                                                    <option class="Chemical prefOption" value="Chemical"> Chemical Engineering </option>
+                                                                                    <option class="Civil prefOption" value="Civil"> Civil Engineering </option>
+                                                                                    <option class="Cloud_Computing prefOption" value="Cloud Computing"> Cloud Computing </option>
+                                                                                    <option class="Computer_Vision prefOption" value="Computer Vision"> Computer Vision </option>
+                                                                                    <option class="Cyber_Security prefOption" value="Cyber Security"> Cyber Security </option>
+                                                                                    <option class="Electrical prefOption" value="Electrical"> Electrical Engineering </option>
+                                                                                    <option class="Electronics prefOption" value="Electronics"> Electronics Engineering </option>
+                                                                                    <option class="Energy_Science_and_Engineering prefOption" value="Energy Science and Engineering"> Energy Science &amp; Engineering </option>
+                                                                                    <option class="Engineering_Design prefOption" value="Engineering Design"> Engineering Design </option>
+                                                                                    <option class="Engineering_Physics prefOption" value="Engineering Physics"> Engineering Physics </option>
+                                                                                    <option class="Flutter_Development prefOption" value="Flutter Development"> Flutter Development </option>
+                                                                                    <option class="Game_Development prefOption" value="Game Development"> Game Development </option>
+                                                                                    <option class="Image_Processing prefOption" value="Image Processing"> Image Processing </option>
+                                                                                    <option class="iOS_App_Development prefOption" value="iOS App Development"> iOS App Development </option>
+                                                                                    <option class="Javascript_Development prefOption" value="Javascript Development"> Javascript Development </option>
+                                                                                    <option class="Magento_Development prefOption" value="Magento Development"> Magento Development </option>
+                                                                                    <option class="Material_Science prefOption" value="Material Science"> Material Science </option>
+                                                                                    <option class="Mechanical prefOption" value="Mechanical"> Mechanical Engineering </option>
+                                                                                    <option class="Metallurgy prefOption" value="Metallurgy"> Metallurgical Engineering </option>
+                                                                                    <option class="Mobile_App_Development prefOption" value="Mobile App Development"> Mobile App Development </option>
+                                                                                    <option class="Naval_and_Ocean prefOption" value="Naval and Ocean"> Naval Architecture and Ocean Engineeering </option>
+                                                                                    <option class="Network_Engineering prefOption" value="Network Engineering"> Network Engineering </option>
+                                                                                    <option class="Node_js_Development prefOption" value="Node.js Development"> Node.js Development </option>
+                                                                                    <option class="Petroleum_Engineering prefOption" value="Petroleum Engineering"> Petroleum Engineering </option>
+                                                                                    <option class="PHP_Development prefOption" value="PHP Development"> PHP Development </option>
+                                                                                    <option class="Programming prefOption" value="Programming"> Programming </option>
+                                                                                    <option class="Python_Django prefOption" value="Python/Django"> Python/Django Development </option>
+                                                                                    <option class="Ruby_on_Rails prefOption" value="Ruby on Rails"> Ruby on Rails </option>
+                                                                                    <option class="Software_Development prefOption" value="Software Development"> Software Development </option>
+                                                                                    <option class="Software_Testing prefOption" value="Software Testing"> Software Testing </option>
+                                                                                    <option class="Web_Development prefOption" value="Web Development"> Web Development </option>
+                                                                                    <option class="Wordpress_Development prefOption" value="Wordpress Development"> Wordpress Development </option>
+                                                                                    <option class="Hospitality prefOption" value="" disabled=""> Hospitality </option>
+                                                                                    <option class="Culinary_Arts prefOption" value="Culinary Arts"> Culinary Arts </option>
+                                                                                    <option class="Hotel_Management prefOption" value="Hotel Management"> Hotel Management </option>
+                                                                                    <option class="Travel_and_Tourism prefOption" value="Travel and Tourism"> Travel &amp; Tourism </option>
+                                                                                    <option class="Media prefOption" value="" disabled=""> Media </option>
+                                                                                    <option class="Anchoring prefOption" value="Anchoring"> Anchoring </option>
+                                                                                    <option class="Animation prefOption" value="Animation"> Animation </option>
+                                                                                    <option class="Audio_Making_Editing prefOption" value="Audio Making/Editing"> Audio Making/Editing </option>
+                                                                                    <option class="Cinematography prefOption" value="Cinematography"> Cinematography </option>
+                                                                                    <option class="Content_Writing prefOption" value="Content Writing"> Content Writing </option>
+                                                                                    <option class="Film_Making prefOption" value="Film Making"> Film Making </option>
+                                                                                    <option class="Journalism prefOption" value="Journalism"> Journalism </option>
+                                                                                    <option class="Motion_Graphics prefOption" value="Motion Graphics"> Motion Graphics </option>
+                                                                                    <option class="Photography prefOption" value="Photography"> Photography </option>
+                                                                                    <option class="PR prefOption" value="PR"> Public Relations (PR) </option>
+                                                                                    <option class="Proofreading prefOption" value="Proofreading"> Proofreading </option>
+                                                                                    <option class="Transcription prefOption" value="Transcription"> Transcription </option>
+                                                                                    <option class="Translation prefOption" value="Translation"> Translation </option>
+                                                                                    <option class="Video_Making_Editing prefOption" value="Video Making/Editing"> Video Making/Editing </option>
+                                                                                    <option class="Videography prefOption" value="Videography"> Videography </option>
+                                                                                    <option class="Science prefOption" value="" disabled=""> Science </option>
+                                                                                    <option class="Biology prefOption" value="Biology"> Biology </option>
+                                                                                    <option class="Chemistry prefOption" value="Chemistry"> Chemistry </option>
+                                                                                    <option class="Dietetics_Nutrition prefOption" value="Dietetics/Nutrition"> Dietetics/Nutrition </option>
+                                                                                    <option class="Mathematics prefOption" value="Mathematics"> Mathematics </option>
+                                                                                    <option class="Medicine prefOption" value="Medicine"> Medicine </option>
+                                                                                    <option class="Pharmaceutical prefOption" value="Pharmaceutical"> Pharmaceutical </option>
+                                                                                    <option class="Physics prefOption" value="Physics"> Physics </option>
+                                                                                    <option class="Statistics prefOption" value="Statistics"> Statistics </option>
+                                                                                    <option class="Volunteering prefOption" value="" disabled=""> Volunteering </option>
+                                                                                    <option class="Social_Work prefOption" value="Social Work"> Social Work </option>
+                                                                                    <option class="Others prefOption" value="" disabled=""> Others </option>
+                                                                                    <option class="Acting prefOption" value="Acting"> Acting </option>
+                                                                                    <option class="Agriculture_and_Food_Engineering prefOption" value="Agriculture and Food Engineering"> Agriculture &amp; Food Engineering </option>
+                                                                                    <option class="Campus_Ambassador prefOption" value="Campus Ambassador"> Campus Ambassador </option>
+                                                                                    <option class="Data_Science prefOption" value="Data Science"> Data Science </option>
+                                                                                    <option class="Event_Management prefOption" value="Event Management"> Event Management </option>
+                                                                                    <option class="Humanities prefOption" value="Humanities"> Humanities </option>
+                                                                                    <option class="Law prefOption" value="Law"> Law </option>
+                                                                                    <option class="Music prefOption" value="Music"> Music </option>
+                                                                                    <option class="Product prefOption" value="Product"> Product Management </option>
+                                                                                    <option class="Psychology prefOption" value="Psychology"> Psychology </option>
+                                                                                    <option class="Subject_Matter_Expert__SME_ prefOption" value="Subject Matter Expert (SME)"> Subject Matter Expert (SME) </option>
+                                                                                    <option class="Teaching prefOption" value="Teaching"> Teaching </option>
+                                                                        </select></div>
+                                                                        <div id="location-container" class="chosen_container_outer" style="display: block;">
+                                                                            <div id="cities_heading" class="heading123">
+                                                                                Preferred locations
+                                                                            </div>
+                                                                            <div class="label_faded">
+                                                                                Leave this blank if you do not have any preference
+                                                                            </div>
+                                                                            <div id="location">
+                                                                <div id="preference_input_container" class="preference_input_container location_preference">
+                                                                
+                                                            
+                                                                        <div class="form-group">
+                                                                            <select class="form-control" id="exampleFormControlSelect2">
+                                                                                <option class="Select your 1st preference" value=""> Select your 1st preference </option>
+                                                                                <option class="prefOption emptyOptionSelected" value=""> </option>
+                                                                                                            <option class="6 prefOption" value="6"> Agra </option>
+                                                                                                                    <option class="5 prefOption" value="5"> Ahmedabad </option>
+                                                                                                                    <option class="2579 prefOption" value="2579"> Allahabad </option>
+                                                                                                                    <option class="22 prefOption" value="22"> Amritsar </option>
+                                                                                                                    <option class="31 prefOption" value="31"> Aurangabad </option>
+                                                                                                                    <option class="1021 prefOption" value="1021"> Bangalore </option>
+                                                                                                                    <option class="2051 prefOption" value="2051"> Bhopal </option>
+                                                                                                                    <option class="58 prefOption" value="58"> Bhubaneswar </option>
+                                                                                                                    <option class="71 prefOption" value="71"> Chandigarh </option>
+                                                                                                                    <option class="72 prefOption" value="72"> Chennai </option>
+                                                                                                                    <option class="75 prefOption" value="75"> Coimbatore </option>
+                                                                                                                    <option class="92 prefOption" value="92"> Delhi </option>
+                                                                                                                    <option class="99 prefOption" value="99"> Dhanbad </option>
+                                                                                                                    <option class="109 prefOption" value="109"> Faridabad </option>
+                                                                                                                    <option class="105 prefOption" value="105"> Ghaziabad </option>
+                                                                                                                    <option class="114 prefOption" value="114"> Gurgaon </option>
+                                                                                                                    <option class="112 prefOption" value="112"> Guwahati </option>
+                                                                                                                    <option class="2493 prefOption" value="2493"> Gwalior </option>
+                                                                                                                    <option class="3464 prefOption" value="3464"> Howrah </option>
+                                                                                                                    <option class="1649 prefOption" value="1649"> Hyderabad </option>
+                                                                                                                    <option class="119 prefOption" value="119"> Indore </option>
+                                                                                                                    <option class="International_Internship prefOption" value="International Internship"> International </option>
+                                                                                                                    <option class="117 prefOption" value="117"> Jabalpur </option>
+                                                                                                                    <option class="1925 prefOption" value="1925"> Jaipur </option>
+                                                                                                                    <option class="129 prefOption" value="129"> Jodhpur </option>
+                                                                                                                    <option class="139 prefOption" value="139"> Kanpur </option>
+                                                                                                                    <option class="154 prefOption" value="154"> Kochi </option>
+                                                                                                                    <option class="156 prefOption" value="156"> Kolkata </option>
+                                                                                                                    <option class="162 prefOption" value="162"> Kota </option>
+                                                                                                                    <option class="179 prefOption" value="179"> Lucknow </option>
+                                                                                                                    <option class="171 prefOption" value="171"> Ludhiana </option>
+                                                                                                                    <option class="178 prefOption" value="178"> Madurai </option>
+                                                                                                                    <option class="201 prefOption" value="201"> Meerut </option>
+                                                                                                                    <option class="2036 prefOption" value="2036"> Mumbai </option>
+                                                                                                                    <option class="3206 prefOption" value="3206"> Nagpur </option>
+                                                                                                                    <option class="3739 prefOption" value="3739"> Nashik </option>
+                                                                                                                    <option class="2437 prefOption" value="2437"> Navi Mumbai </option>
+                                                                                                                    <option class="3117 prefOption" value="3117"> Noida </option>
+                                                                                                                    <option class="7954 prefOption" value="7954"> North Goa </option>
+                                                                                                                    <option class="227 prefOption" value="227"> Patna </option>
+                                                                                                                    <option class="1474 prefOption" value="1474"> Pimpri-Chinchwad </option>
+                                                                                                                    <option class="237 prefOption" value="237"> Pune </option>
+                                                                                                                    <option class="2988 prefOption" value="2988"> Raipur </option>
+                                                                                                                    <option class="240 prefOption" value="240"> Rajkot </option>
+                                                                                                                    <option class="246 prefOption" value="246"> Ranchi </option>
+                                                                                                                    <option class="283 prefOption" value="283"> Solapur </option>
+                                                                                                                    <option class="3826 prefOption" value="3826"> South Goa </option>
+                                                                                                                    <option class="3018 prefOption" value="3018"> Srinagar </option>
+                                                                                                                    <option class="302 prefOption" value="302"> Surat </option>
+                                                                                                                    <option class="835 prefOption" value="835"> Thane </option>
+                                                                                                                    <option class="296 prefOption" value="296"> Thiruvananthapuram </option>
+                                                                                                                    <option class="861 prefOption" value="861"> Vadodara </option>
+                                                                                                                    <option class="1141 prefOption" value="1141"> Varanasi </option>
+                                                                                                                    <option class="2633 prefOption" value="2633"> Vijayawada </option>
+                                                                                                                    <option class="313 prefOption" value="313"> Visakhapatnam </option>
+                                                                                                        </select>
+                                                            
+                                                    
+                                                                    <div class="preferences_table form-group">
+                                                                     
+                                                                        <div class="form-group">
+                                                                            <select class="form-control" id="exampleFormControlSelect2">
+                                                                                <option class="Select your 2nd preference" value=""> Select your 2nd preference </option>
+                                                                                <option class="prefOption emptyOptionSelected" value=""> </option>
+                                                                                                            <option class="6 prefOption" value="6"> Agra </option>
+                                                                                                                    <option class="5 prefOption" value="5"> Ahmedabad </option>
+                                                                                                                    <option class="2579 prefOption" value="2579"> Allahabad </option>
+                                                                                                                    <option class="22 prefOption" value="22"> Amritsar </option>
+                                                                                                                    <option class="31 prefOption" value="31"> Aurangabad </option>
+                                                                                                                    <option class="1021 prefOption" value="1021"> Bangalore </option>
+                                                                                                                    <option class="2051 prefOption" value="2051"> Bhopal </option>
+                                                                                                                    <option class="58 prefOption" value="58"> Bhubaneswar </option>
+                                                                                                                    <option class="71 prefOption" value="71"> Chandigarh </option>
+                                                                                                                    <option class="72 prefOption" value="72"> Chennai </option>
+                                                                                                                    <option class="75 prefOption" value="75"> Coimbatore </option>
+                                                                                                                    <option class="92 prefOption" value="92"> Delhi </option>
+                                                                                                                    <option class="99 prefOption" value="99"> Dhanbad </option>
+                                                                                                                    <option class="109 prefOption" value="109"> Faridabad </option>
+                                                                                                                    <option class="105 prefOption" value="105"> Ghaziabad </option>
+                                                                                                                    <option class="114 prefOption" value="114"> Gurgaon </option>
+                                                                                                                    <option class="112 prefOption" value="112"> Guwahati </option>
+                                                                                                                    <option class="2493 prefOption" value="2493"> Gwalior </option>
+                                                                                                                    <option class="3464 prefOption" value="3464"> Howrah </option>
+                                                                                                                    <option class="1649 prefOption" value="1649"> Hyderabad </option>
+                                                                                                                    <option class="119 prefOption" value="119"> Indore </option>
+                                                                                                                    <option class="International_Internship prefOption" value="International Internship"> International </option>
+                                                                                                                    <option class="117 prefOption" value="117"> Jabalpur </option>
+                                                                                                                    <option class="1925 prefOption" value="1925"> Jaipur </option>
+                                                                                                                    <option class="129 prefOption" value="129"> Jodhpur </option>
+                                                                                                                    <option class="139 prefOption" value="139"> Kanpur </option>
+                                                                                                                    <option class="154 prefOption" value="154"> Kochi </option>
+                                                                                                                    <option class="156 prefOption" value="156"> Kolkata </option>
+                                                                                                                    <option class="162 prefOption" value="162"> Kota </option>
+                                                                                                                    <option class="179 prefOption" value="179"> Lucknow </option>
+                                                                                                                    <option class="171 prefOption" value="171"> Ludhiana </option>
+                                                                                                                    <option class="178 prefOption" value="178"> Madurai </option>
+                                                                                                                    <option class="201 prefOption" value="201"> Meerut </option>
+                                                                                                                    <option class="2036 prefOption" value="2036"> Mumbai </option>
+                                                                                                                    <option class="3206 prefOption" value="3206"> Nagpur </option>
+                                                                                                                    <option class="3739 prefOption" value="3739"> Nashik </option>
+                                                                                                                    <option class="2437 prefOption" value="2437"> Navi Mumbai </option>
+                                                                                                                    <option class="3117 prefOption" value="3117"> Noida </option>
+                                                                                                                    <option class="7954 prefOption" value="7954"> North Goa </option>
+                                                                                                                    <option class="227 prefOption" value="227"> Patna </option>
+                                                                                                                    <option class="1474 prefOption" value="1474"> Pimpri-Chinchwad </option>
+                                                                                                                    <option class="237 prefOption" value="237"> Pune </option>
+                                                                                                                    <option class="2988 prefOption" value="2988"> Raipur </option>
+                                                                                                                    <option class="240 prefOption" value="240"> Rajkot </option>
+                                                                                                                    <option class="246 prefOption" value="246"> Ranchi </option>
+                                                                                                                    <option class="283 prefOption" value="283"> Solapur </option>
+                                                                                                                    <option class="3826 prefOption" value="3826"> South Goa </option>
+                                                                                                                    <option class="3018 prefOption" value="3018"> Srinagar </option>
+                                                                                                                    <option class="302 prefOption" value="302"> Surat </option>
+                                                                                                                    <option class="835 prefOption" value="835"> Thane </option>
+                                                                                                                    <option class="296 prefOption" value="296"> Thiruvananthapuram </option>
+                                                                                                                    <option class="861 prefOption" value="861"> Vadodara </option>
+                                                                                                                    <option class="1141 prefOption" value="1141"> Varanasi </option>
+                                                                                                                    <option class="2633 prefOption" value="2633"> Vijayawada </option>
+                                                                                                                    <option class="313 prefOption" value="313"> Visakhapatnam </option>
+                                                                                                        </select>
+                                                                    <div class="preferences_table form-group">
+                                                                     
+                                                                        <div class="form-group">
+                                                                            <select class="form-control" id="exampleFormControlSelect2">
+                                                                                <option class="Select your 3rd preference" value=""> Select your 3rd preference </option>
+                                                                                <option class="prefOption emptyOptionSelected" value=""> </option>
+                                                                                                            <option class="6 prefOption" value="6"> Agra </option>
+                                                                                                                    <option class="5 prefOption" value="5"> Ahmedabad </option>
+                                                                                                                    <option class="2579 prefOption" value="2579"> Allahabad </option>
+                                                                                                                    <option class="22 prefOption" value="22"> Amritsar </option>
+                                                                                                                    <option class="31 prefOption" value="31"> Aurangabad </option>
+                                                                                                                    <option class="1021 prefOption" value="1021"> Bangalore </option>
+                                                                                                                    <option class="2051 prefOption" value="2051"> Bhopal </option>
+                                                                                                                    <option class="58 prefOption" value="58"> Bhubaneswar </option>
+                                                                                                                    <option class="71 prefOption" value="71"> Chandigarh </option>
+                                                                                                                    <option class="72 prefOption" value="72"> Chennai </option>
+                                                                                                                    <option class="75 prefOption" value="75"> Coimbatore </option>
+                                                                                                                    <option class="92 prefOption" value="92"> Delhi </option>
+                                                                                                                    <option class="99 prefOption" value="99"> Dhanbad </option>
+                                                                                                                    <option class="109 prefOption" value="109"> Faridabad </option>
+                                                                                                                    <option class="105 prefOption" value="105"> Ghaziabad </option>
+                                                                                                                    <option class="114 prefOption" value="114"> Gurgaon </option>
+                                                                                                                    <option class="112 prefOption" value="112"> Guwahati </option>
+                                                                                                                    <option class="2493 prefOption" value="2493"> Gwalior </option>
+                                                                                                                    <option class="3464 prefOption" value="3464"> Howrah </option>
+                                                                                                                    <option class="1649 prefOption" value="1649"> Hyderabad </option>
+                                                                                                                    <option class="119 prefOption" value="119"> Indore </option>
+                                                                                                                    <option class="International_Internship prefOption" value="International Internship"> International </option>
+                                                                                                                    <option class="117 prefOption" value="117"> Jabalpur </option>
+                                                                                                                    <option class="1925 prefOption" value="1925"> Jaipur </option>
+                                                                                                                    <option class="129 prefOption" value="129"> Jodhpur </option>
+                                                                                                                    <option class="139 prefOption" value="139"> Kanpur </option>
+                                                                                                                    <option class="154 prefOption" value="154"> Kochi </option>
+                                                                                                                    <option class="156 prefOption" value="156"> Kolkata </option>
+                                                                                                                    <option class="162 prefOption" value="162"> Kota </option>
+                                                                                                                    <option class="179 prefOption" value="179"> Lucknow </option>
+                                                                                                                    <option class="171 prefOption" value="171"> Ludhiana </option>
+                                                                                                                    <option class="178 prefOption" value="178"> Madurai </option>
+                                                                                                                    <option class="201 prefOption" value="201"> Meerut </option>
+                                                                                                                    <option class="2036 prefOption" value="2036"> Mumbai </option>
+                                                                                                                    <option class="3206 prefOption" value="3206"> Nagpur </option>
+                                                                                                                    <option class="3739 prefOption" value="3739"> Nashik </option>
+                                                                                                                    <option class="2437 prefOption" value="2437"> Navi Mumbai </option>
+                                                                                                                    <option class="3117 prefOption" value="3117"> Noida </option>
+                                                                                                                    <option class="7954 prefOption" value="7954"> North Goa </option>
+                                                                                                                    <option class="227 prefOption" value="227"> Patna </option>
+                                                                                                                    <option class="1474 prefOption" value="1474"> Pimpri-Chinchwad </option>
+                                                                                                                    <option class="237 prefOption" value="237"> Pune </option>
+                                                                                                                    <option class="2988 prefOption" value="2988"> Raipur </option>
+                                                                                                                    <option class="240 prefOption" value="240"> Rajkot </option>
+                                                                                                                    <option class="246 prefOption" value="246"> Ranchi </option>
+                                                                                                                    <option class="283 prefOption" value="283"> Solapur </option>
+                                                                                                                    <option class="3826 prefOption" value="3826"> South Goa </option>
+                                                                                                                    <option class="3018 prefOption" value="3018"> Srinagar </option>
+                                                                                                                    <option class="302 prefOption" value="302"> Surat </option>
+                                                                                                                    <option class="835 prefOption" value="835"> Thane </option>
+                                                                                                                    <option class="296 prefOption" value="296"> Thiruvananthapuram </option>
+                                                                                                                    <option class="861 prefOption" value="861"> Vadodara </option>
+                                                                                                                    <option class="1141 prefOption" value="1141"> Varanasi </option>
+                                                                                                                    <option class="2633 prefOption" value="2633"> Vijayawada </option>
+                                                                                                                    <option class="313 prefOption" value="313"> Visakhapatnam </option>
+                                                                                                        </select>
+                                                            
+                                                                <div id="select_box_template" style="display: none;" class="location_preference_box_template">
+                                                            
+                                                                        <div class="preference-select">
+                                                                            <select name="location_selected_preferences[]" class="preference_input chosen-select" data-placeholder="Select city" preference="location">
+                                                                                <option class="prefOption emptyOptionSelected" value=""> </option>
+                                                                                                            <option class="6 prefOption" value="6"> Agra </option>
+                                                                                                                    <option class="5 prefOption" value="5"> Ahmedabad </option>
+                                                                                                                    <option class="2579 prefOption" value="2579"> Allahabad </option>
+                                                                                                                    <option class="22 prefOption" value="22"> Amritsar </option>
+                                                                                                                    <option class="31 prefOption" value="31"> Aurangabad </option>
+                                                                                                                    <option class="1021 prefOption" value="1021"> Bangalore </option>
+                                                                                                                    <option class="2051 prefOption" value="2051"> Bhopal </option>
+                                                                                                                    <option class="58 prefOption" value="58"> Bhubaneswar </option>
+                                                                                                                    <option class="71 prefOption" value="71"> Chandigarh </option>
+                                                                                                                    <option class="72 prefOption" value="72"> Chennai </option>
+                                                                                                                    <option class="75 prefOption" value="75"> Coimbatore </option>
+                                                                                                                    <option class="92 prefOption" value="92"> Delhi </option>
+                                                                                                                    <option class="99 prefOption" value="99"> Dhanbad </option>
+                                                                                                                    <option class="109 prefOption" value="109"> Faridabad </option>
+                                                                                                                    <option class="105 prefOption" value="105"> Ghaziabad </option>
+                                                                                                                    <option class="114 prefOption" value="114"> Gurgaon </option>
+                                                                                                                    <option class="112 prefOption" value="112"> Guwahati </option>
+                                                                                                                    <option class="2493 prefOption" value="2493"> Gwalior </option>
+                                                                                                                    <option class="3464 prefOption" value="3464"> Howrah </option>
+                                                                                                                    <option class="1649 prefOption" value="1649"> Hyderabad </option>
+                                                                                                                    <option class="119 prefOption" value="119"> Indore </option>
+                                                                                                                    <option class="International_Internship prefOption" value="International Internship"> International </option>
+                                                                                                                    <option class="117 prefOption" value="117"> Jabalpur </option>
+                                                                                                                    <option class="1925 prefOption" value="1925"> Jaipur </option>
+                                                                                                                    <option class="129 prefOption" value="129"> Jodhpur </option>
+                                                                                                                    <option class="139 prefOption" value="139"> Kanpur </option>
+                                                                                                                    <option class="154 prefOption" value="154"> Kochi </option>
+                                                                                                                    <option class="156 prefOption" value="156"> Kolkata </option>
+                                                                                                                    <option class="162 prefOption" value="162"> Kota </option>
+                                                                                                                    <option class="179 prefOption" value="179"> Lucknow </option>
+                                                                                                                    <option class="171 prefOption" value="171"> Ludhiana </option>
+                                                                                                                    <option class="178 prefOption" value="178"> Madurai </option>
+                                                                                                                    <option class="201 prefOption" value="201"> Meerut </option>
+                                                                                                                    <option class="2036 prefOption" value="2036"> Mumbai </option>
+                                                                                                                    <option class="3206 prefOption" value="3206"> Nagpur </option>
+                                                                                                                    <option class="3739 prefOption" value="3739"> Nashik </option>
+                                                                                                                    <option class="2437 prefOption" value="2437"> Navi Mumbai </option>
+                                                                                                                    <option class="3117 prefOption" value="3117"> Noida </option>
+                                                                                                                    <option class="7954 prefOption" value="7954"> North Goa </option>
+                                                                                                                    <option class="227 prefOption" value="227"> Patna </option>
+                                                                                                                    <option class="1474 prefOption" value="1474"> Pimpri-Chinchwad </option>
+                                                                                                                    <option class="237 prefOption" value="237"> Pune </option>
+                                                                                                                    <option class="2988 prefOption" value="2988"> Raipur </option>
+                                                                                                                    <option class="240 prefOption" value="240"> Rajkot </option>
+                                                                                                                    <option class="246 prefOption" value="246"> Ranchi </option>
+                                                                                                                    <option class="283 prefOption" value="283"> Solapur </option>
+                                                                                                                    <option class="3826 prefOption" value="3826"> South Goa </option>
+                                                                                                                    <option class="3018 prefOption" value="3018"> Srinagar </option>
+                                                                                                                    <option class="302 prefOption" value="302"> Surat </option>
+                                                                                                                    <option class="835 prefOption" value="835"> Thane </option>
+                                                                                                                    <option class="296 prefOption" value="296"> Thiruvananthapuram </option>
+                                                                                                                    <option class="861 prefOption" value="861"> Vadodara </option>
+                                                                                                                    <option class="1141 prefOption" value="1141"> Varanasi </option>
+                                                                                                                    <option class="2633 prefOption" value="2633"> Vijayawada </option>
+                                                                                                                    <option class="313 prefOption" value="313"> Visakhapatnam </option>
+                                                                                                        </select>
+                                                                        </div>
+                                                                        <div class="clear_item">
+                                                                            <div class="clear_value" style="display:none">
+                                                                                <i class="ic-24-cross"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <script nonce="">
+                                                                var locationFilledPreferences = [];
+                                                            </script>
+                                                                        </div>
+                                                                        <div id="open_to_similar_internship_container" style="display: block;">
+                                                                            <div class="form-group">
+                                                                                <div class="checkbox">
+                                                                                    <input type="checkbox" name="similar-internship" value="similar-internship" id="similar_internship">
+                                                                                    <label for="similar_internship">I am also open to similar internships</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div id="buttons_container" class="buttons_container" style="">
+                                                                            <div>
+                                                                                <button class="btn btn-primary" id="submit" type="submit">Save</button>
+                                                                            </div>
+                                                                        </div>
+                           
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

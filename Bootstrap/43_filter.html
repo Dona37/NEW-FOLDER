@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <link href="43_filter.css"type="text/css" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <!-- Custom CSS -->
+</head>
+  <body>
+    <div class="modal" id="filtersModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: block;">
+        <div class="filtersModal_popover_overlay">
+        </div>
+        <div class="filters_expand">
+            <div class="filterApplied">
+                <div class="heading_5_modalFilterUi">
+                    Filters
+                </div>
+            </div>
+            <i class="cancel ic-24-cross"></i>
+        </div>
+        <div id="mobile_filters_container">
+            <div id="filters_mobile">
+                <div id="form_container_mobile">
+                    <form role="form" class="without_search_boosters" id="search_form_mobile" method="POST">
+                        
+                        <div class="category_container form-group showToastOnMobileFalse showGeneralToastOnMobileFalse" title="Uncheck &quot;As per my preferences&quot; checkbox to search manually" id="category_container">
+                            <label for="select_category" class="control-label">Category</label>
+                            <div id="categoryOptions_mobile">
+                            </div>
+    
+                            <div class="loading_spinner" id="loading_spinner_category" style="display: none;">
+                            </div>
+                        </div>
+    
+                        <div id="location_filter_mobile" class="location_container form-group showToastOnMobileFalse showGeneralToastOnMobileFalse" title="Uncheck &quot;As per my preferences&quot; checkbox to search manually" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<div style='width:160px; font-size:12px;' class='data_content'>Click here to change location</div>" data-template="<div class=&quot;popover location-filters-popover&quot; style=&quot;background-color:#1295c9; color:#fff;&quot;><div class=&quot;arrow&quot; style=&quot;left:14% !important&quot;></div><div class=&quot;popover-inner&quot;><div class=&quot;popover-content&quot;><p></p></div></div></div>">
+                            <label for="city_sidebar">Location</label>
+                            <div id="cityOptions_mobile">
+                            </div>
+    
+                            <div class="loading_spinner" id="loading_spinner_location" style="display: none;">
+                            </div>
+                        </div>
+    
+                        <div class="filters_checkboxes_containers job_checkboxes_container filters_checkboxes_containers_add_transparent showToastOnMobileFalse showGeneralToastOnMobileFalse" title="Uncheck &quot;As per my preferences&quot; checkbox to search manually">
+                            <div class="form-group flex-row checkbox checkbox_group checkbox_container" id="remote_check_box">
+                                <input type="checkbox" id="remote_job_mobile" name="remote_job">
+                                <label class="" for="remote_job_mobile"></label>
+                                <label id="remote_check_box_label" for="remote_job_mobile">Work from home</label>
+                            </div>
+                            <div class="form-group flex-row checkbox checkbox_group checkbox_container" id="fresher_job_mobile">
+                                <input type="checkbox" id="fresher_job_checkbox_mobile" name="fresher_job">
+                                <label class="" for="fresher_job_checkbox_mobile"></label>
+                                <label id="fresher_job_checkbox_label" for="fresher_job_checkbox_mobile">Fresher jobs</label>
+                            </div>
+                            <div class="form-group flex-row checkbox checkbox_group checkbox_container" id="salary_3lpa_mobile">
+                                <input type="checkbox" id="salary_3lpa_checkbox_mobile" name="salary_3lpa">
+                                <label class="" for="salary_3lpa_checkbox_mobile"></label>
+                                <label id="salary_3lpa_checkbox_label" for="salary_3lpa_checkbox_mobile">Show only 3 LPA+ jobs</label>
+                            </div>
+                            <div class="form-group flex-row checkbox checkbox_group checkbox_container" id="internship_check_box">
+                                <input type="checkbox" id="internship_checkbox_mobile" name="internship_checkbox">
+                                <label class="" for="internship_checkbox_mobile"></label>
+                                <label id="internship_check_box_label" for="internship_checkbox_mobile">Include all internships</label>
+                            </div>
+                        </div>
+    
+                        <div class="applyContainer">
+                            <div class="reset_container ">
+                                <a title="All filters applied have been cleared. Click on 'Apply' to view all jobs" class="reset"> Clear All</a>
+                            </div>
+                            <div class="apply_btn_btn-primary">
+                                Apply
+                            </div>
+                        </div>
+    
+                    </form>
+    
+                    <form role="form" id="keyword_search_form_mobile" class="" method="POST">
+                        <div class="heading_5">Search</div>
+                        <div class="form-group keywordContainer">
+                            <div class="keyword showToastOnMobileFalse" title="Uncheck &quot;As per my preferences&quot; checkbox to search manually">
+                                <div class=" input-group has_cross_and_button">
+                                    <input type="text" class="form-control pop-mobile" id="keywords_mobile" value="" name="keywords" placeholder="e.g. Design, Mumbai, Infosys" autocomplete="off" data-original-title="" title="">
+                                    <span class="input-group-btn cross_btn_container" style="display: none;"><button class="cross_btn" type="button"><i class="ic-16-cross"></i> </button></span>
+                                    <br>
+                                    <button type="submit" title="Uncheck &quot;As per my preferences&quot; checkbox to search manually" id="search_mobile" class="btn btn-primary showToastOnMobileFalse">
+                                        <i class="ic-16-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
