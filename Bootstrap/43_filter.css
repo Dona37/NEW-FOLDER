@@ -57,3 +57,88 @@ a {
     cursor: pointer;
     line-height: 1.14285714;
 }
+.form-container{
+    padding-left: 20%;
+    margin-top: 50px;
+}
+.category_container-form-group{
+    width: 500px;
+}
+.heading_5{
+    color: #484848;
+    align-self: center;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+.filterUi span {
+    color: #484848;
+    align-self: center;
+}
+.filters_checkboxes_containers{
+    padding-left: 20%;
+}
+.filter_toggle{
+    padding-left: 20%; 
+}
+.form-group_stipend_filter_container{
+    padding-left: 20%;
+}
+input {
+    border-radius: 3px;
+    overflow: visible;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.form-control-range{
+    appearance: auto;
+    cursor: default;
+    color: -internal-light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
+    padding: initial;
+    border: initial;
+    margin: 2px;}
+.stipend_values_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    width: 100%;
+}
+.filter_toggle {
+
+    align-items: center;
+    color: #008BDC;
+    cursor: pointer;
+    margin: 24px 0;
+    width: fit-content;
+}
+.filter_toggle span {
+    font-weight: 600;
+}
+.filter_toggle i {
+    margin-left: 4px;
+}
+.ic-16-s15-chevron-down{
+    font-size: 16px;
+    font-family: internshala-icons!important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.stipend_values_container{
+    color: #484848;
+    font-size: 14px;
+    line-height: 1.14;
+    width: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+.form-group{
+    width: 500px;
+}
+
