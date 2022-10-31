@@ -1,0 +1,204 @@
+
+
+
+.container-fluidindividual_internshipvisibilityTrackerItem{
+    margin-top: 50px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 0 1px #eee;
+    box-shadow: 0 0 4px rgb(72 72 72 / 12%), 0 2px 2px rgb(72 72 72 / 8%);
+    padding: 15px 16px 20px;
+    background:#F8F8F8;
+    
+}
+.container-fluid{
+    width: 100%;
+    color: #333;
+    font-family: Inter,sans-serif;
+    font-size: 14px;
+    line-height: 1.57142857;
+    font-weight: 400;
+}
+.actively_hiring_badge {
+    width: fit-content;
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    gap: 6px;
+}
+.individual_internship_header {
+    color: #333;
+    line-height: 1.25;
+    font-family: 'Inter var',sans-serif;
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+.view_detail_button{
+    font-size: 16px;
+    color: #333;
+}
+.individual_internship_details {
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+.tags_container_mobile {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.button_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tags_container_mobile.is_from_detail_page {
+    display: flex;
+}
+.container{
+    padding-top: 100px;
+    padding-left: 50%;
+
+}
+.link_display_like_text_view_detail_button{
+    color: #8A8A8A;
+    font-weight: 600;
+    line-height: 1.43;
+    font-size: 14px;
+}
+.location_link_view_detail_button{
+    line-height: 22px;
+    color: #333;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: transparent;
+}
+.ic-16-map-pin{
+    color: #8A8A8A;
+    margin-right: 4px;
+    margin-top: 2px;
+}
+.internship_other_details_container {
+    flex-direction: column;
+    display: flex;
+}
+.other_detail_item_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.individual_internship_details {
+    margin-bottom: 8px;
+}
+.other_detail_item.large_stipend_text {
+    margin-right: 24px;
+}
+.other_detail_item {
+    margin-top: 20px;
+    display: flex;
+}
+.item_heading {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #8A8A8A;
+    display: flex;
+    font-weight: 500;
+    font-family: 'Inter var',sans-serif;
+}
+.item_body {
+    margin-top: 0;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    line-height: 16px;
+    font-family: Inter,sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.status-container {
+    margin-right: 12px;
+    margin-top: 12px;
+    display: flex;
+    box-sizing: border-box;
+    color: #333;
+    font-family: Inter,sans-serif;
+    font-size: 14px;
+    line-height: 1.57142857;
+    font-weight: 400;
+    text-align: left;
+    background-color: #fff;
+}
+.status.status-small {
+    font-weight: 400;
+}
+.status.status-inactive {
+    background: #F8F8F8;
+    color: #333;
+}
+.status.status-small {
+    padding: 2px 6px;
+    font-size: 12px;
+    line-height: 1.33333333;
+    height: 20px;
+    display: flex;
+}
+.statusstatus-smallstatus-inactive{
+    color: #666;
+    background-color: #EEE;
+    background: #F8F8F8;
+    padding: 2px 6px;
+    font-size: 12px;
+    line-height: 1.33333333;
+    height: 20px;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    text-align: center;
+}
+.view_detail_button {
+    margin-top: 16px;
+    align-self: center;
+    display: flex;
+    padding-left: 8px;
+    margin-left: auto;
+    padding-right: 0;
+    font-weight: 500;
+    text-decoration: none;
+    color: #008BDC;
+    cursor: pointer;
+    line-height: 1.14285714;
+    background-color: transparent;
+    font-family: 'Inter var',sans-serif;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 350px;
+}
+.view_detail_button222{
+    color: #333;
+    line-height: 1.25;
+    
+}
+.actively_hiring_badge i {
+    color: #008BDC;
+}
+.view_detail_button i{
+    font-size: 16px;
+    vertical-align: middle;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
