@@ -137,28 +137,25 @@ a {
     line-height: 1.57142857;
     font-weight: 400;
     text-align: left;
-    background-color: #fff;
 }
 .status.status-small {
     font-weight: 400;
 }
 .status.status-inactive {
-    background: #F8F8F8;
+
     color: #333;
 }
 .status.status-small {
     padding: 2px 6px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.33333333;
     height: 20px;
     display: flex;
 }
 .statusstatus-smallstatus-inactive{
     color: #666;
-    background-color: #EEE;
-    background: #F8F8F8;
     padding: 2px 6px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.33333333;
     height: 20px;
     display: flex;
@@ -201,4 +198,8 @@ a {
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
+}
+.item_body .stipend {
+    display: flex;
+    align-items: center;
 }
