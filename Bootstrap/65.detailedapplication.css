@@ -1,0 +1,25 @@
+
+
+.container-fluidindividual_internshipvisibilityTrackerItem{
+    margin-top: 50px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 16px 20px;
+    box-shadow: 0 0 0 1px #eee;
+}
+.title{
+text-align: center;
+}
+.img{
+    max-width: 72px;
+    max-height: 48px;
+    color: transparent;
+    vertical-align: middle;
+    border-style: none;
+}
+.button{
+    text-align: center;
+}
+
+
