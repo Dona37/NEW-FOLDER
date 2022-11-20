@@ -1,0 +1,19 @@
+.title{
+    text-align: center;
+    }
+    .box{
+     margin-top: 50px;
+    margin-bottom: 8px;
+    position: relative;
+    border: none;
+    border-radius: 2px;
+    padding: 15px 16px 20px;
+    box-shadow: 0 0 0 1px #eee;
+    left: 50%;
+    font-weight: bold;
+    font-size: 15px;
+    }
+    .button{
+       margin-left: 280px;
+    
+    }
