@@ -1,0 +1,31 @@
+.alertincrease-margin{
+    margin-bottom: 8px;
+    position: relative;
+    border: none;
+    border-radius: 2px;
+    padding: 15px 16px 20px;
+    box-shadow: 0 0 0 2px #eee;
+}
+.has_char_count .char_count {
+    display: block;
+    height: 20px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 0;
+    line-height: 1.33333333;
+    color: #BBB;
+}
+.buttons_containermodal_button{
+    text-align: right;
+}
+.checkbox1{
+    color: #484848;
+    line-height: 1.14285714;
+    padding-left: 280px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 0;
+}
