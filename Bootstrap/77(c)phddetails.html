@@ -38,13 +38,13 @@
               </button>
               <div class="heading_4 modal-header">
                 <span id="college-title"
-                  ><h5><strong>&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    Graduation details</strong></h5></span
-
+                  ><h5>
+                    <strong>
+                      &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PhD details</strong
+                    >
+                  </h5></span
                 >
               </div>
               <div class="modal-body">
@@ -79,7 +79,7 @@
                       for="degree_completion_status"
                       class="control-label education_completion_status_label"
                       id="degree_completion_status_label"
-                      ><strong>Graduation status</strong></label
+                      ><strong>PhD status</strong></label
                     >
                     <div
                       class="input-group"
@@ -120,7 +120,7 @@
                       class="form-control ui-autocomplete-input"
                       autocomplete="off"
                       name="college"
-                      placeholder="e.g. Hindu College "
+                      placeholder="e.g. Jamia Millia Islamia"
                       aria-required="true"
                     />
                   </div>
@@ -266,58 +266,19 @@
                       </tr>
                     </tbody>
                   </table>
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">
-                          <i class="fa fa-play" aria-hidden="true"></i> Degree
-                        </th>
-                        <th scope="col">
-                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                          Stream (Optional)
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="text-container">
-                            <input
-                              type="text"
-                              name="degree"
-                              placeholder="e.g. B.Sc (Hons.) "
-                            />
-                          </div>
-                        </td>
-                        <td>
-                          <div class="text-container">
-                            <input
-                              type="text"
-                              name="stream"
-                              placeholder="e.g. Economics "
-                            />
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div class="tips_education">
-                    <div class="alert">
-                      <p>
-                        Example: If your degree is B.Sc in Chemistry, then
-                        select Bachelor of Science (B.Sc) in <b>degree</b> and
-                        Chemistry in <b>streams</b>.
-                        <br />
-                        <br />
-                        If you can't find your degree, check for typos or
-                        different ways of writing your degree or choose from the
-                        closest available. Write to
-                        <a href="mailto:support@internshala.com"
-                          >support@internshala.com</a
-                        >
-                        if you are pursuing a degree not available in the list.
-                      </p>
-                    </div>
+                  <div class="form-group1">
+                    <label for="college" class="control-label">
+                      <strong>Stream</strong>
+                    </label>
+                    <input
+                      type="text"
+                      id="stream"
+                      class="form-control ui-autocomplete-input"
+                      autocomplete="off"
+                      name="stream"
+                      placeholder="e.g. Commerce and Business Studies"
+                      aria-required="true"
+                    />
                   </div>
                   <table class="table">
                     <thead>

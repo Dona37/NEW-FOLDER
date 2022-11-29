@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <link href="95_additionaldetails.css" type="text/css" rel="stylesheet" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true" class="ic-24-cross"></span>
+              </button>
+              <div class="heading_4 modal-header">
+                <span>
+                  <h5>
+                    &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;Additional details
+                  </h5>
+                </span>
+              </div>
+              <div class="modal-body">
+                <form
+                  role="form"
+                  id="por-form"
+                  class="experience_form"
+                  method="POST"
+                  novalidate="novalidate"
+                >
+                  <input
+                    type="hidden"
+                    name="csrf_test_name"
+                    value="eb23e15a62b7aa4ce2134f623741f9ea"
+                    id="csrf"
+                  />
+                  <input
+                    type="hidden"
+                    name="type"
+                    value="position_of_responsibility"
+                  />
+                  <input
+                    type="hidden"
+                    id="position-of-responsibility-id"
+                    name="id"
+                    value=""
+                  />
+                  <div class="form-group">
+                    <label
+                      for="other_experiences_por_description"
+                      class="control-label"
+                    >
+                      <b
+                        >Add your accomplishments such as rewards, recognitions,
+                        test scores, certifications, etc. here. You may also add
+                        information such as seminars/workshops you have attended
+                        or any interests/hobbies you have pursued.</b
+                      >
+                    </label>
+                    <div class="has_char_count">
+                      <textarea
+                        class="form-control"
+                        id="other_experiences_por_description"
+                        placeholder="E.g. Secured 1st rank among 500 entries in national level story writing competition organised by Internshala."
+                        name="description"
+                        aria-required="true"
+                      ></textarea>
+                      <label
+                        class="char_count char_count_default"
+                        for="other_experiences_por_description"
+                        >0/250</label
+                      >
+                    </div>
+                  </div>
+                  <div class="buttons_containermodal_button">
+                    <button
+                      class="btn btn-primary"
+                      id="por-submit"
+                      type="submit"
+                      name="submit"
+                    >
+                      Save
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+.has_char_count1 textarea.form-control {
+    height: 154px;
+}
+.has_char_count1 .char_count {
+    display: block;
+    height: 20px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 0;
+    line-height: 1.33333333;
+    color: #BBB;
+}
+.buttons_containermodal_button{
+    text-align: right;
+}
+.resume-form-helper-text {
+    color: #8A8A8A;
+    margin-bottom: 8px;
+}
+.checkbox1{
+    color: #484848;
+    line-height: 1.14285714;
+    padding-left: 210px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 0;
+}
