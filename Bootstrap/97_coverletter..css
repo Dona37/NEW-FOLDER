@@ -1,5 +1,5 @@
 .heading{
-    text-align: center;
+    margin-left: 328px;
 }
 .has_char_count{
     max-width: 960px;
@@ -14,4 +14,15 @@
 }
 .Submit{
 text-align: center;
+}
+.collapse{
+    max-width: 960px;
+    margin-left: 328px;
+}
+.button{
+    margin-left: 328px;
+    width: 1000px;
+}
+.heading1{
+    margin-left: 328px;
 }
