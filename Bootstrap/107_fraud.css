@@ -1,0 +1,21 @@
+.box{
+    margin-top: 50px;
+   margin-bottom: 8px;
+   position: relative;
+   border: none;
+   border-radius: 10px;
+   padding: 15px 16px 20px;
+   box-shadow: 0 0 0 1px #eee;
+   left: 50%;
+   font-weight: bold;
+   font-size: 15px;
+   }
+   .button{
+      margin-left: 420px;
+   
+   }
+   .text{
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 4px;
+   }
