@@ -1,0 +1,76 @@
+.heading_container{
+    padding: 23px 23px 24px;
+    margin: 0 auto;
+    max-width: 940px;
+    border: 1px solid #EEE;
+    border-bottom: 0;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+    margin-top: 50px;
+}
+.feedback_sunday_banner{
+    max-width: 940px;
+    margin: 0 auto;
+    background-color: #4383D6;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+    border-radius: 0 0 8px 8px;
+    padding: 16px;
+    display: flex;
+}
+.job_title{
+    color: #333;
+    font-family: Inter,sans-serif;
+    font-size: 24px;
+    line-height: 1.57142857;
+    font-weight: 400;
+}
+.heading_and_subheading{
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    text-align: left;
+    font-size: 19px;
+}
+.company_name {
+    font-size: 18px;
+    line-height: 1.33333333;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #666;
+    max-width: 704px;
+}
+.layout_inner{
+    border: 1px solid #EEE;
+    border-radius: 8px 8px 0 0;
+    max-width: 940px;
+    margin: 24px auto 0;
+}
+.application_details{
+    border: 1px solid #EEE;
+    border-radius:  0 0 8px 8px;
+    max-width: 940px;
+    margin: 0px auto 0;
+}
+.text{
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.layout_inner_application_details{
+    border: 1px solid #EEE;
+    border-radius: 8px 8px 0 0;
+    max-width: 940px;
+    margin: 24px auto 0; 
+}
+.trainings_recommendation_inner{
+    margin-left: 120px;
+}
+.button_container{
+    margin-left: 650px;
+}
+.details_left{
+    margin-top: 20px;
+}

@@ -1,0 +1,25 @@
+.box{
+    margin-top: 50px;
+   margin-bottom: 8px;
+   position: relative;
+   border: none;
+   border-radius: 10px;
+   padding: 15px 16px 20px;
+   box-shadow: 0 0 0 1px #eee;
+ max-width: 400px;
+   font-size: 15px;
+   }
+   .box{
+    font-style: normal;
+   }
+   .max-width-container{
+    margin-left: 550px;
+    margin-top: 50px;
+   }
+   .btn.btn-primary {
+    background: #00A5EC;
+    border-radius: 3px;
+    border: 1px solid #00A5EC;
+    width: 370px;
+color: rgb(255, 255, 255);
+}

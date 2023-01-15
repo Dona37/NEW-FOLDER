@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <link href="124_deleteaccount.css" type="text/css" rel="stylesheet" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="max-width-container">
+      <div id="form-container">
+        <h4>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete my account
+        </h4>
+        <br />
+        <p>Dona, we’re sorry to see you go.</p>
+        <p class="message2">
+          Please note that deleting your account is irreversible<br />
+          and all the data associated with your<br />
+          <b>donasreekumar@gmail.com</b> account (including<br />
+          access to trainings) will be permanently deleted.
+        </p>
+        <form
+          role="form"
+          class="internshala-form"
+          id="delete-account-form"
+          method="POST"
+          novalidate="novalidate"
+        >
+          <input
+            type="hidden"
+            name="csrf_test_name"
+            value="cd505dd3eb73dc399cea2fc939856995"
+          />
+          <div class="form-group">
+            <div class="box">
+              <label for="feedback" class="text">
+                Before you leave, please tell us why you'd like to delete your
+                Internshala account. This information will help us improve.
+                <span class="label_faded">(Optional)</span>
+              </label>
+
+              <textarea
+                class="form-control"
+                id="feedback"
+                name="feedback"
+                rows="5"
+                placeholder="Your feedback matters"
+              ></textarea>
+              <br />
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="delete_account_submit"
+              >
+                Proceed
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

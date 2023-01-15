@@ -1,14 +1,11 @@
-.resume_heading{
-    text-align: center;
-}
-.alert-warning.strong_prompt {
-    max-width: 1000px;
-}
 .alert.alert-warning {
     padding: 16px;
     background: #FFFAEB;
     border: 1px solid #FFEF85;
     color: #945E12;
+    max-width: 750px;
+    margin-left: 390px;
+    margin-top: 250px;
 }
 .strong_prompt {
     display: flex;
@@ -24,7 +21,7 @@
 .alert{
     position: relative;
 }
-.container-fluidindividual_internshipvisibilityTrackerItem{
+.application_table_container{
     margin-top: 24px;
     margin-bottom: 48px;
     margin-left: 265px;
@@ -33,4 +30,16 @@
     padding: 15px 16px 20px;
     box-shadow: 0 0 0 1px #eee;
     max-width: 1000px;
+}
+.title{
+    text-align: center;
+    margin-top: 20px;
+}
+.button{
+    margin-left: 365px;
+    margin-top: 250px;
+}
+.collapse{
+    max-width: 800px;
+    margin-left: 365px;
 }
