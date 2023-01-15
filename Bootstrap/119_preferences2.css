@@ -86,6 +86,7 @@ form {
   border-radius:25px;
   min-width: 2px;
   font-size: 13px;
+  font-weight: bold;
 }
 .btn.btn-primary {
   background: #00A5EC;
