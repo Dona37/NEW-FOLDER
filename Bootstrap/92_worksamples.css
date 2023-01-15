@@ -1,0 +1,58 @@
+.bs-stepper-header{
+    margin-left: 140px;
+    margin-top: 50px;
+}
+.title{
+    text-align: center;
+    }
+ .box{
+  margin-top: 17px;
+    margin-bottom: 8px;
+    position: relative;
+    border: none;
+    border-radius: 2px;
+    padding: 15px 16px 20px;
+    box-shadow: 0 0 0 1px #eee;
+    left: 50%;
+    font-weight: bold;
+    font-size: 15px;
+    width:560px;
+    }
+    .button{
+       margin-left: 630px;
+    
+    }
+    .boxx{
+        margin-top: 17px;
+        margin-bottom: 8px;
+        position: relative;
+        border: none;
+        border-radius: 2px;
+        padding: 15px 16px 20px;
+        box-shadow: 0 0 0 1px #eee;
+        left: 25%;
+        font-weight: bold;
+        font-size: 15px;
+        width:560px;
+    }
+    .box1{
+        margin-top: 50px;
+        margin-bottom: 8px;
+        position: relative;
+        border: none;
+        border-radius: 2px;
+        padding: 15px 16px 20px;
+        box-shadow: 0 0 0 1px #eee;
+        left: 28%;
+        color:blue;
+        font-size: 15px;
+        width: 750px;
+        background-color:lightskyblue;
+    }
+    .btn.btn-outline-secondary{
+        border-radius:25px;
+        min-width: 2px;
+        font-size: 14px;
+        font-weight: bold;
+        color: dodgerblue;
+      }
