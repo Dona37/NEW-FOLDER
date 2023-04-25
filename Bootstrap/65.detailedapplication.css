@@ -21,5 +21,15 @@ text-align: center;
 .button{
     text-align: center;
 }
+.alert.alert-warning{
+    padding: 16px;
+    background: #FFFAEB;
+    border: 1px solid #FFEF85;
+    color: #945E12;
+    max-width: 1080px;
+    margin-left: 210px;
+    margin-right: 200px;
+    margin-top: 5px;
+}
 
 

@@ -1,0 +1,45 @@
+.max-width-container{
+    margin-left: 500px;
+    margin-top: 100px;
+    margin-right:500px;
+}
+.form-control.input-lg{
+    max-width: 380px;
+}
+.btn.btn-primary{
+    width: 500px;
+}
+.text{
+    margin-left: 60px;
+}
+.google_content{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #eee;
+    box-shadow: 0 0 4px rgb(72 72 72 / 12%), 0 2px 2px rgb(72 72 72 / 8%);
+    padding: 15px 16px 20px;
+    background:#F8F8F8;
+    
+}
+.registration-container-right{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #eeeeee;
+    box-shadow: 0 0 4px rgba(72, 72, 72, 0.588), 0 2px 2px rgb(72 72 72 / 8%);
+    padding: 15px 16px 20px;
+    background:#f8f8f8;  
+}
+.text2{
+    text-align: center;
+}
+.login-link-container{
+    text-align: center;
+}
+.mobile{
+    margin-left: 240px;
+}

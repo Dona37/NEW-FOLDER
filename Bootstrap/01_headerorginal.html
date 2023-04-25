@@ -70,11 +70,16 @@
               <i class="ic-24-cross" aria-hidden="true"></i>
             </button>
           </div>
-          <!-- Second Row -->
           <div class="modal-body">
             <div id="user-menu-container">
               <div id="user-menu">
                 <div class="row">
+                  <div
+                    class="col-xs-6 col-6 user-menu-item active login_student"
+                    id="modal_student"
+                  >
+                    Student
+                  </div>
                   <div
                     class="col-xs-6 col-6 user-menu-item login_employer"
                     id="modal_employer"
@@ -83,79 +88,79 @@
                   </div>
                 </div>
               </div>
-              <a class="google_login" href="/login/get_google">
-                <div id="google-button-container">
-                  <div class="google_image_container">
-                    <img src="/static/images/login/google_logo.png" />
-                  </div>
-                  <div class="google_content">Login with Google</div>
-                </div>
-              </a>
-              <div class="helper">
-                <div class="text2">
-                  <p>OR</p>
-                </div>
-                <div class="border"></div>
-              </div>
-              <form
-                role="form"
-                id="modal-login-form"
-                method="POST"
-                novalidate="novalidate"
-              >
-                <input
-                  type="hidden"
-                  name="csrf_test_name"
-                  value="a81e565123b39920bfc20c31d2cc6c74"
-                />
-                <div class="form-group">
-                  <label for="email" class="control-label">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="modal_email"
-                    tabindex="1"
-                    name="email"
-                    placeholder="john@example.com"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="password" class="control-label">Password</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="modal_password"
-                    tabindex="2"
-                    name="password"
-                    placeholder="Must be atleast 6 characters"
-                  />
-                </div>
-                <div class="forgot_password">
-                  <a href="/login/forgot_password" id="forgot-password"
-                    >Forgot password?</a
-                  >
-                </div>
-                <div class="form-group">
-                  <button
-                    type="submit"
-                    class="btn btn-primary"
-                    id="modal_login_submit"
-                    tabindex="3"
-                  >
-                    Login
-                  </button>
-                </div>
-                <div class="form-group new_to_internshala">
-                  <label>
-                    New to Internshala? Register (<a
-                      href="/registration/student"
-                      >Student</a
-                    >
-                    / <a href="/registration/employer">Company</a>)
-                  </label>
-                </div>
-              </form>
             </div>
+            <a class="google_login" href="/login/get_google">
+              <div id="google-button-container">
+                <div class="google_image_container">
+                  <img src="/static/images/login/google_logo.png" />
+                </div>
+                <div class="google_content">Login with Google</div>
+              </div>
+            </a>
+            <div class="helper">
+              <div class="text2">
+                <p>OR</p>
+              </div>
+              <div class="border"></div>
+            </div>
+
+            <form
+              role="form"
+              id="modal-login-form"
+              method="POST"
+              novalidate="novalidate"
+            >
+              <input
+                type="hidden"
+                name="csrf_test_name"
+                value="579c42f1cfd1ffd3c8a8ddf485d8a609"
+              />
+              <div class="form-group">
+                <label for="email" class="control-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="modal_email"
+                  tabindex="1"
+                  name="email"
+                  placeholder="john@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password" class="control-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="modal_password"
+                  tabindex="2"
+                  name="password"
+                  placeholder="Must be atleast 6 characters"
+                />
+              </div>
+              <div class="forgot_password">
+                <a href="/login/forgot_password" id="forgot-password"
+                  >Forgot password?</a
+                >
+              </div>
+              <div class="form-group">
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  id="modal_login_submit"
+                  tabindex="3"
+                >
+                  Login
+                </button>
+              </div>
+              <div class="form-group new_to_internshala">
+                <label>
+                  New to Internshala? Register (<a href="/registration/student"
+                    >Student</a
+                  >
+                  / <a href="/post-job">Company</a>)
+                </label>
+              </div>
+            </form>
           </div>
         </div>
       </div>
