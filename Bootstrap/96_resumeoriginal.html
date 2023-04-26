@@ -36,12 +36,10 @@
       This is the resume that the eployer will see, make sure it is to update.
       You can add or edit details &nbsp;&nbsp;&nbsp;
       <a href="99_coverletter.html">
-      <button
-        type="button"
-        class="btn btn-primary"
-      >
-        Proceed to application</button
-      ></a><br />
+        <button type="button" class="btn btn-primary">
+          Proceed to application
+        </button></a
+      ><br />
       below.
     </div>
     <div class="resume_heading">
@@ -59,8 +57,432 @@
             <td>
               <br />
               <h2>
-                Dona Sreekumar <i class="fa fa-pencil" aria-hidden="true"></i>
+                Dona Sreekumar
+                <i
+                  class="fa fa-pencil"
+                  aria-hidden="true"
+                  data-toggle="modal"
+                  data-target="#personal_details"
+                ></i>
               </h2>
+
+              <!-- The Modal -->
+              <div class="modal" id="personal_details">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <div class="heading_4 modal-header">
+                      <span id="college-title"
+                        ><h5>
+                          <strong
+                            >&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp; Personal Details</strong
+                          >
+                        </h5></span
+                      >
+                    </div>
+                    <div class="modal-body">
+                      <form
+                        role="form"
+                        novalidate="novalidate"
+                        id="personal_details"
+                        name="registration"
+                        enctype="multipart/form-data"
+                        method="POST"
+                      >
+                        <div class="input_fields_container">
+                          <input
+                            type="hidden"
+                            value="dashboard"
+                            name="referral"
+                          />
+                          <input
+                            type="hidden"
+                            id="personal_details_resume_first_name"
+                            value=""
+                          />
+                          <input
+                            type="hidden"
+                            id="personal_details_resume_last_name"
+                            value=""
+                          />
+                          <input
+                            type="hidden"
+                            id="personal_details_resume_gender"
+                            value=""
+                          />
+                          <input
+                            type="hidden"
+                            id="personal_details_resume_email"
+                            value=""
+                          />
+                          <input
+                            type="hidden"
+                            id="personal_details_resume_country_code"
+                            value="+91"
+                          />
+                          <input
+                            type="hidden"
+                            id="personal_details_resume_phone_primary"
+                            value=""
+                          />
+                          <input
+                            type="hidden"
+                            id="personal_details_resume_current_city"
+                            value=""
+                          />
+                          <input
+                            type="hidden"
+                            id="personal_details_resume_second_city_of_residence"
+                            value=""
+                          />
+                          <input
+                            type="hidden"
+                            id="personal_details_resume_submit"
+                            name="personal_details_resume_submit"
+                            value="submit"
+                          />
+
+                          <input
+                            type="hidden"
+                            class="current_city"
+                            id="personal_details_resume_current_city_location_id"
+                            value=""
+                          />
+                          <input
+                            type="hidden"
+                            class="second_city_of_residence"
+                            id="personal_details_resume_second_city_of_residence_location_id"
+                            value=""
+                          />
+                          <input
+                            type="hidden"
+                            class="mother_tongue"
+                            id="personal_details_resume_mother_tongue"
+                            value=""
+                          />
+                          <input
+                            type="hidden"
+                            class="mother_tongue"
+                            id="personal_details_resume_mother_tongue_id"
+                            value=""
+                          />
+                          <input
+                            type="hidden"
+                            name="csrf_test_name"
+                            value="635bc51c87f842fa64f03efa9c108b61"
+                            id="csrf"
+                          />
+
+                          <div class="input-group name_container">
+                            <div
+                              class="form-group first_name_container has-error"
+                            >
+                              <label for="first_name" class="control-label"
+                                >First name</label
+                              >
+                              <input
+                                class="form-control first_name error"
+                                id="first_name"
+                                tabindex="2"
+                                name="first_name"
+                                placeholder="First name"
+                                value=""
+                                type="text"
+                                autocomplete="none"
+                                aria-required="true"
+                                aria-invalid="true"
+                              /><label
+                                id="first_name-error"
+                                class="help-block form-error"
+                                for="first_name"
+                                >This field is required</label
+                              >
+                            </div>
+                            <div
+                              class="form-group last_name_container has-success"
+                            >
+                              <label for="last_name" class="control-label"
+                                >Last name</label
+                              >
+                              <input
+                                class="form-control last_name valid"
+                                id="last_name"
+                                tabindex="3"
+                                name="last_name"
+                                placeholder="Last name"
+                                value=""
+                                type="text"
+                                autocomplete="none"
+                                aria-invalid="false"
+                              /><label
+                                id="last_name-error"
+                                class="help-block form-error"
+                                for="last_name"
+                                style="display: inline-block"
+                              ></label>
+                            </div>
+                          </div>
+                          <!-- Second Row -->
+                          <div class="form-group gender_container">
+                            <div class="form-group">
+                              <label for="gender">Gender</label>
+                              <select
+                                class="form-control gender chosen-select"
+                                id="gender"
+                                tabindex="-1"
+                                name="gender"
+                                data-placeholder="Select"
+                                required=""
+                                aria-required="true"
+                              >
+                                <option value=""></option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="undesirous">
+                                  Prefer not to say
+                                </option>
+                              </select>
+                              <div
+                                class="form-group"
+                                id="email_container"
+                                style="display: none"
+                              >
+                                <label for="email" class="control-label"
+                                  >Email</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="email"
+                                  tabindex="4"
+                                  name="email"
+                                  placeholder="Your email"
+                                  value="aswinsreekumar84@gmail.com"
+                                  readonly="readonly"
+                                  disabled="disabled"
+                                />
+                              </div>
+                              <br />
+                              <!-- Third Row -->
+                              <div
+                                class="input-group phone_primary_container_outer"
+                              >
+                                <label
+                                  for="phone_primary"
+                                  class="control-label"
+                                >
+                                  Mobile number
+                                </label>
+                                <div id="phone_primary_container">
+                                  <div
+                                    class="form-group country_code_container"
+                                  >
+                                    <input
+                                      type="text"
+                                      class="form-control country-code"
+                                      tabindex="5"
+                                      id="country_code"
+                                      name="country_code"
+                                      placeholder="County code"
+                                      value="+91"
+                                    />
+                                  </div>
+                                  <div
+                                    class="form-group phone_primary_container has-error"
+                                  >
+                                    <input
+                                      type="text"
+                                      class="form-control mobile-number error"
+                                      tabindex="6"
+                                      id="phone_primary"
+                                      name="phone_primary"
+                                      placeholder="Your 10 digit mobile number "
+                                      value=""
+                                      autocomplete="none"
+                                      aria-required="true"
+                                      aria-invalid="true"
+                                    /><label
+                                      id="phone_primary-error"
+                                      class="help-block form-error"
+                                      for="phone_primary"
+                                      >This field is required</label
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Fourth Row -->
+                              <div class="form-group">
+                                <label for="current_city" class="control-label"
+                                  >Current location</label
+                                >
+                                <span class="label_faded"
+                                  >Please enter the location where you currently
+                                  live</span
+                                >
+                                <input
+                                  type="hidden"
+                                  class="current_city"
+                                  name="current_city_location_id"
+                                  id="current_city_location_id"
+                                  value=""
+                                />
+                                <input
+                                  type="text"
+                                  class="form-control ui-autocomplete-input"
+                                  id="current_city"
+                                  tabindex="7"
+                                  name="current_city"
+                                  placeholder="Current city"
+                                  value=""
+                                  autocomplete="none"
+                                />
+                                <div
+                                  class="loading_spinner"
+                                  id="loading_spinner_current_city"
+                                  style="display: none"
+                                ></div>
+                                <div id="current_city_ui_autocomplete">
+                                  <ul
+                                    class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content location_autocomplete_plugin"
+                                    id="ui-id-2"
+                                    tabindex="0"
+                                    style="display: none"
+                                  ></ul>
+                                </div>
+                              </div>
+                              <!-- Fifth Row -->
+                              <div class="form-group">
+                                <label
+                                  for="second_city_of_residence"
+                                  class="control-label"
+                                  >Second location</label
+                                >
+                                <span class="label_faded"
+                                  >If you study in one location (say Delhi) but
+                                  are from a different location (say Chennai),
+                                  fill this to be considered for opportunities
+                                  in both</span
+                                >
+                                <input
+                                  type="hidden"
+                                  class="second_city_of_residence"
+                                  name="second_city_of_residence_location_id"
+                                  id="second_city_of_residence_location_id"
+                                  value=""
+                                />
+                                <input
+                                  type="text"
+                                  class="form-control ui-autocomplete-input"
+                                  id="second_city_of_residence"
+                                  tabindex="8"
+                                  name="second_city_of_residence"
+                                  placeholder="Second city"
+                                  value=""
+                                  autocomplete="none"
+                                />
+                                <div
+                                  class="loading_spinner"
+                                  id="loading_spinner_second_city_of_residence"
+                                  style="display: none"
+                                ></div>
+                                <div
+                                  id="second_city_of_residence_ui_autocomplete"
+                                >
+                                  <ul
+                                    class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content location_autocomplete_plugin"
+                                    id="ui-id-3"
+                                    tabindex="0"
+                                    style="display: none"
+                                  ></ul>
+                                </div>
+                              </div>
+                              <!-- Sixth Row -->
+                              <div class="form-group">
+                                <label for="mother_tongue" class="control-label"
+                                  >Mother tongue</label
+                                >
+                                <input
+                                  type="hidden"
+                                  class="mother_tongue"
+                                  name="mother_tongue_id"
+                                  id="mother_tongue_id"
+                                  value=""
+                                />
+                                <input
+                                  type="text"
+                                  class="form-control ui-autocomplete-input"
+                                  id="mother_tongue"
+                                  tabindex="8"
+                                  name="mother_tongue"
+                                  placeholder="Enter language"
+                                  value=""
+                                  autocomplete="off"
+                                />
+                                <div id="mother_tongue_ui_autocomplete">
+                                  <ul
+                                    class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content"
+                                    id="ui-id-1"
+                                    tabindex="0"
+                                    style="display: none"
+                                  ></ul>
+                                </div>
+                              </div>
+                              <!-- Seventh Row -->
+                              <div class="preferred-language form-group">
+                                <div class="heading1">
+                                  Preferred language of learning
+                                </div>
+                                <div class="radio-buttons">
+                                  <div class="radio">
+                                    <input
+                                      name="preferred_language"
+                                      id="preferred_language_english"
+                                      type="radio"
+                                      value="english"
+                                    />
+                                    <label for="preferred_language_english"
+                                      >English</label
+                                    >
+                                  </div>
+                                  <div class="radio">
+                                    <input
+                                      name="preferred_language"
+                                      id="preferred_language_mother_tongue"
+                                      type="radio"
+                                      value="mother_tongue"
+                                    />
+                                    <label
+                                      for="preferred_language_mother_tongue"
+                                      >Mother tongue</label
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Eighth Row -->
+                        <div class="buttons_container">
+                          <button
+                            type="submit"
+                            name="submit"
+                            class="btn btn-primary"
+                            id="personal-detail-submit"
+                            tabindex="9"
+                          >
+                            Save &amp; next
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
               dona.20ubb122@mariancollege.org
               <br />+91 6282759052 <br />
               Idukki
@@ -91,28 +513,820 @@
             2020-2023
             <br /><b>Secondary (X)</b> <br />St Joseph's Hss Peruvanthnm
             <br />(KERALA HIGHER SECONDARY EDUCATION COUNCIL board) <br />Year
-            of completion: 2020 <br /><br /><a href=""
+            of completion: 2020 <br /><br /><a href="78_education12.html"
               ><i class="fa fa-plus" aria-hidden="true"></i> Add education</a
             ><br /><br />
           </td>
           <td>
-            <i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<i
+            <i
+              class="fa fa-pencil"
+              aria-hidden="true"
+              data-toggle="modal"
+              data-target="#college-form"
+            ></i>
+
+            <!-- The Modal -->
+            <div class="modal" id="college-form">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                  <div class="heading_4 modal-header">
+                    <span id="college-title"
+                      ><h5>
+                        <strong
+                          >&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp; Graduation details</strong
+                        >
+                      </h5></span
+                    >
+                  </div>
+                  <div class="modal-body">
+                    <form
+                      role="form"
+                      id="college-form"
+                      class="education_form"
+                      method="POST"
+                      novalidate="novalidate"
+                    >
+                      <input
+                        type="hidden"
+                        id="college-type"
+                        name="type"
+                        value="ug"
+                      />
+                      <input
+                        type="hidden"
+                        id="education-detail-id"
+                        name="id"
+                        value=""
+                      />
+                      <input
+                        type="hidden"
+                        name="csrf_test_name"
+                        value="56ecd3b2ae1adcc21a8cb173db8c9990"
+                        id="csrf"
+                      />
+
+                      <div
+                        class="form-group education_completion_status_container"
+                      >
+                        <label
+                          for="degree_completion_status"
+                          class="control-label education_completion_status_label"
+                          id="degree_completion_status_label"
+                          ><strong>Graduation status</strong></label
+                        >
+                        <div
+                          class="input-group"
+                          id="degree_completion_status_error"
+                        >
+                          <div class="start-year radio">
+                            <input
+                              type="radio"
+                              id="degree_completion_status_pursuing"
+                              name="degree_completion_status"
+                              value="pursuing"
+                              aria-required="true"
+                            />
+                            <label for="degree_completion_status_pursuing">
+                              Pursuing &nbsp;&nbsp;&nbsp;
+                            </label>
+                          </div>
+                          <div class="end-year radio">
+                            <input
+                              type="radio"
+                              id="degree_completion_status_completed"
+                              name="degree_completion_status"
+                              value="completed"
+                            />
+                            <label for="degree_completion_status_completed">
+                              Completed
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="college" class="control-label">
+                          <strong>College</strong>
+                        </label>
+                        <input
+                          type="text"
+                          id="college"
+                          class="form-control ui-autocomplete-input"
+                          autocomplete="off"
+                          name="college"
+                          placeholder="e.g. Hindu College "
+                          aria-required="true"
+                        />
+                      </div>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">
+                              <i class="fa fa-play" aria-hidden="true"></i>
+                              Start year
+                            </th>
+                            <th scope="col">
+                              <i
+                                class="fa fa-calendar-o"
+                                aria-hidden="true"
+                              ></i>
+                              End year
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-outline-secondary dropdown-toggle"
+                                  type="button"
+                                  data-toggle="dropdown"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                >
+                                  Choose Year
+                                </button>
+                                <div
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuButton"
+                                >
+                                  <a class="dropdown-item" href="#">2023</a>
+                                  <a class="dropdown-item" href="#">2022</a>
+                                  <a class="dropdown-item" href="#">2021</a>
+                                  <a class="dropdown-item" href="#">2020</a>
+                                  <a class="dropdown-item" href="#">2019</a>
+                                  <a class="dropdown-item" href="#">2018</a>
+                                  <a class="dropdown-item" href="#">2017</a>
+                                  <a class="dropdown-item" href="#">2016</a>
+                                  <a class="dropdown-item" href="#">2015</a>
+                                  <a class="dropdown-item" href="#">2014</a>
+                                  <a class="dropdown-item" href="#">2013</a>
+                                  <a class="dropdown-item" href="#">2012</a>
+                                  <a class="dropdown-item" href="#">2011</a>
+                                  <a class="dropdown-item" href="#">2010</a>
+                                  <a class="dropdown-item" href="#">2009</a>
+                                  <a class="dropdown-item" href="#">2008</a>
+                                  <a class="dropdown-item" href="#">2007</a>
+                                  <a class="dropdown-item" href="#">2006</a>
+                                  <a class="dropdown-item" href="#">2005</a>
+                                  <a class="dropdown-item" href="#">2004</a>
+                                  <a class="dropdown-item" href="#">2003</a>
+                                  <a class="dropdown-item" href="#">2002</a>
+                                  <a class="dropdown-item" href="#">2001</a>
+                                  <a class="dropdown-item" href="#">2000</a>
+                                  <a class="dropdown-item" href="#">1999</a>
+                                  <a class="dropdown-item" href="#">1998</a>
+                                  <a class="dropdown-item" href="#">1997</a>
+                                  <a class="dropdown-item" href="#">1996</a>
+                                  <a class="dropdown-item" href="#">1995</a>
+                                  <a class="dropdown-item" href="#">1994</a>
+                                  <a class="dropdown-item" href="#">1993</a>
+                                  <a class="dropdown-item" href="#">1992</a>
+                                  <a class="dropdown-item" href="#">1991</a>
+                                  <a class="dropdown-item" href="#">1990</a>
+                                  <a class="dropdown-item" href="#">1989</a>
+                                  <a class="dropdown-item" href="#">1988</a>
+                                  <a class="dropdown-item" href="#">1987</a>
+                                  <a class="dropdown-item" href="#">1986</a>
+                                  <a class="dropdown-item" href="#">1985</a>
+                                  <a class="dropdown-item" href="#">1984</a>
+                                  <a class="dropdown-item" href="#">1983</a>
+                                  <a class="dropdown-item" href="#">1982</a>
+                                  <a class="dropdown-item" href="#">1981</a>
+                                  <a class="dropdown-item" href="#">1980</a>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-outline-secondary dropdown-toggle"
+                                  type="button"
+                                  data-toggle="dropdown"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                >
+                                  Choose Year
+                                </button>
+                                <div
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuButton"
+                                >
+                                  <a class="dropdown-item" href="#">2023</a>
+                                  <a class="dropdown-item" href="#">2022</a>
+                                  <a class="dropdown-item" href="#">2021</a>
+                                  <a class="dropdown-item" href="#">2020</a>
+                                  <a class="dropdown-item" href="#">2019</a>
+                                  <a class="dropdown-item" href="#">2018</a>
+                                  <a class="dropdown-item" href="#">2017</a>
+                                  <a class="dropdown-item" href="#">2016</a>
+                                  <a class="dropdown-item" href="#">2015</a>
+                                  <a class="dropdown-item" href="#">2014</a>
+                                  <a class="dropdown-item" href="#">2013</a>
+                                  <a class="dropdown-item" href="#">2012</a>
+                                  <a class="dropdown-item" href="#">2011</a>
+                                  <a class="dropdown-item" href="#">2010</a>
+                                  <a class="dropdown-item" href="#">2009</a>
+                                  <a class="dropdown-item" href="#">2008</a>
+                                  <a class="dropdown-item" href="#">2007</a>
+                                  <a class="dropdown-item" href="#">2006</a>
+                                  <a class="dropdown-item" href="#">2005</a>
+                                  <a class="dropdown-item" href="#">2004</a>
+                                  <a class="dropdown-item" href="#">2003</a>
+                                  <a class="dropdown-item" href="#">2002</a>
+                                  <a class="dropdown-item" href="#">2001</a>
+                                  <a class="dropdown-item" href="#">2000</a>
+                                  <a class="dropdown-item" href="#">1999</a>
+                                  <a class="dropdown-item" href="#">1998</a>
+                                  <a class="dropdown-item" href="#">1997</a>
+                                  <a class="dropdown-item" href="#">1996</a>
+                                  <a class="dropdown-item" href="#">1995</a>
+                                  <a class="dropdown-item" href="#">1994</a>
+                                  <a class="dropdown-item" href="#">1993</a>
+                                  <a class="dropdown-item" href="#">1992</a>
+                                  <a class="dropdown-item" href="#">1991</a>
+                                  <a class="dropdown-item" href="#">1990</a>
+                                  <a class="dropdown-item" href="#">1989</a>
+                                  <a class="dropdown-item" href="#">1988</a>
+                                  <a class="dropdown-item" href="#">1987</a>
+                                  <a class="dropdown-item" href="#">1986</a>
+                                  <a class="dropdown-item" href="#">1985</a>
+                                  <a class="dropdown-item" href="#">1984</a>
+                                  <a class="dropdown-item" href="#">1983</a>
+                                  <a class="dropdown-item" href="#">1982</a>
+                                  <a class="dropdown-item" href="#">1981</a>
+                                  <a class="dropdown-item" href="#">1980</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">
+                              <i class="fa fa-play" aria-hidden="true"></i>
+                              Degree
+                            </th>
+                            <th scope="col">
+                              <i
+                                class="fa fa-calendar-o"
+                                aria-hidden="true"
+                              ></i>
+                              Stream (Optional)
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="text-container">
+                                <input
+                                  type="text"
+                                  name="degree"
+                                  placeholder="e.g. B.Sc (Hons.) "
+                                />
+                              </div>
+                            </td>
+                            <td>
+                              <div class="text-container">
+                                <input
+                                  type="text"
+                                  name="stream"
+                                  placeholder="e.g. Economics "
+                                />
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="tips_education">
+                        <div class="alert">
+                          <p>
+                            Example: If your degree is B.Sc in Chemistry, then
+                            select Bachelor of Science (B.Sc) in
+                            <b>degree</b> and Chemistry in <b>streams</b>.
+                            <br />
+                            <br />
+                            If you can't find your degree, check for typos or
+                            different ways of writing your degree or choose from
+                            the closest available. Write to
+                            <a href="mailto:support@internshala.com"
+                              >support@internshala.com</a
+                            >
+                            if you are pursuing a degree not available in the
+                            list.
+                          </p>
+                        </div>
+                      </div>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">
+                              <i class="fa fa-play" aria-hidden="true"></i>
+                              Performance Scale (Optional)
+                            </th>
+                            <th scope="col">
+                              <i class="fa fa-play" aria-hidden="true"></i>
+                              Performance<br />(Optional)
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-outline-secondary dropdown-toggle"
+                                  type="button"
+                                  data-toggle="dropdown"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                >
+                                  Percentage
+                                </button>
+                                <div
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuButton"
+                                >
+                                  <a class="dropdown-item" href="#"
+                                    >CGPA (Scale of 10)</a
+                                  >
+                                  <a class="dropdown-item" href="#"
+                                    >CGPA (Scale of 9)</a
+                                  >
+                                  <a class="dropdown-item" href="#"
+                                    >CGPA (Scale of 8)</a
+                                  >
+                                  <a class="dropdown-item" href="#"
+                                    >CGPA (Scale of 7)</a
+                                  >
+                                  <a class="dropdown-item" href="#"
+                                    >CGPA (Scale of 6)</a
+                                  >
+                                  <a class="dropdown-item" href="#"
+                                    >CGPA (Scale of 5)</a
+                                  >
+                                  <a class="dropdown-item" href="#"
+                                    >CGPA (Scale of 4)</a
+                                  >
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="chosen-drop">
+                                <div class="chosen-search">
+                                  <input
+                                    class="chosen-search-input"
+                                    type="text"
+                                    name="stream"
+                                    placeholder="0.00"
+                                    autocomplete="off"
+                                  />
+                                </div>
+                                <ul class="chosen-results"></ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <div class="buttons_containermodal_buttoncollege_submit">
+                        <button
+                          type="submit"
+                          name="submit"
+                          class="btn btn-primary"
+                          id="college-submit"
+                        >
+                          Save
+                        </button>
+                      </div>
+                      <ul
+                        class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content"
+                        id="ui-id-6"
+                        tabindex="0"
+                        style="display: none"
+                      ></ul>
+                      <ul
+                        class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content"
+                        id="ui-id-7"
+                        tabindex="0"
+                        style="display: none"
+                      ></ul>
+                      <ul
+                        class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content"
+                        id="ui-id-8"
+                        tabindex="0"
+                        style="display: none"
+                      ></ul>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<i
               class="fa fa-trash"
               aria-hidden="true"
+              data-toggle="modal"
+              data-target="#confirmation-modal"
             ></i>
+
+            <!-- The Modal -->
+            <div class="modal" id="confirmation-modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="message_container">
+                      <div
+                        class="text-heading heading_4_5"
+                        style="display: none"
+                      ></div>
+                      <div class="text-message body-main">
+                        Are you sure you want to delete this?
+                      </div>
+                      <div class="button_container">
+                        <button
+                          class="btn btn-secondary modal_secondary_btn close_action"
+                          data-dismiss="modal"
+                        >
+                          No
+                        </button>
+                        <a
+                          class="btn btn-primary modal_primary_btn yes-button close_action"
+                          data-dismiss="modal"
+                          id="confirm_work_experiences_delete_form_submit"
+                          >Yes</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <br /><br /><br /><br />
-            <i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<i
+            <i
+              class="fa fa-pencil"
+              aria-hidden="true"
+              data-toggle="modal"
+              data-target="#education_form"
+            ></i>
+
+            <!-- The Modal -->
+            <div class="modal" id="education_form">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <i class="fa fa-window-close" aria-hidden="true"></i>
+                  </button>
+                  <div class="heading_4modal-header">
+                    <span id="school-title">
+                      <h5>
+                        <br />
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Senior Secondary
+                        or Equivalent (XII) details
+                      </h5>
+                    </span>
+                  </div>
+                  <div class="modal-body">
+                    <form
+                      role="form"
+                      class="education_form"
+                      id="school-form"
+                      method="POST"
+                      novalidate="novalidate"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrf_test_name"
+                        value="56ecd3b2ae1adcc21a8cb173db8c9990"
+                        id="csrf"
+                      />
+                      <input
+                        type="hidden"
+                        id="school-type"
+                        name="type"
+                        value="senior_secondary"
+                      />
+                      <input
+                        type="hidden"
+                        id="education-detail-id"
+                        name="id"
+                        value=""
+                      />
+
+                      <div
+                        class="form-group education_completion_status_container"
+                      >
+                        <label
+                          for="school_completion_status"
+                          class="control-label education_completion_status_label"
+                          id="school_completion_status_label"
+                          ><strong>Intermediate status</strong></label
+                        >
+                        <div
+                          class="input-group"
+                          id="school_completion_status_error"
+                        >
+                          <div class="start-year radio">
+                            <input
+                              type="radio"
+                              id="school_completion_status_pursuing"
+                              name="school_completion_status"
+                              value="pursuing"
+                              aria-required="true"
+                            />
+                            <label for="school_completion_status_pursuing">
+                              Pursuing&nbsp; &nbsp;&nbsp;
+                            </label>
+                          </div>
+                          <div class="end-year radio">
+                            <input
+                              type="radio"
+                              id="school_completion_status_completed"
+                              name="school_completion_status"
+                              value="completed"
+                            />
+                            <label for="school_completion_status_completed">
+                              Completed
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label
+                          for="year_of_completion"
+                          class="control-label"
+                          id="school_completion_year"
+                          ><strong>Year of completion</strong></label
+                        >
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-outline-secondary dropdown-toggle"
+                            type="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            Choose
+                            Year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton"
+                          >
+                            <a class="dropdown-item" href="#">2023</a>
+                            <a class="dropdown-item" href="#">2022</a>
+                            <a class="dropdown-item" href="#">2021</a>
+                            <a class="dropdown-item" href="#">2020</a>
+                            <a class="dropdown-item" href="#">2019</a>
+                            <a class="dropdown-item" href="#">2018</a>
+                            <a class="dropdown-item" href="#">2017</a>
+                            <a class="dropdown-item" href="#">2016</a>
+                            <a class="dropdown-item" href="#">2015</a>
+                            <a class="dropdown-item" href="#">2014</a>
+                            <a class="dropdown-item" href="#">2013</a>
+                            <a class="dropdown-item" href="#">2012</a>
+                            <a class="dropdown-item" href="#">2011</a>
+                            <a class="dropdown-item" href="#">2010</a>
+                            <a class="dropdown-item" href="#">2009</a>
+                            <a class="dropdown-item" href="#">2008</a>
+                            <a class="dropdown-item" href="#">2007</a>
+                            <a class="dropdown-item" href="#">2006</a>
+                            <a class="dropdown-item" href="#">2005</a>
+                            <a class="dropdown-item" href="#">2004</a>
+                            <a class="dropdown-item" href="#">2003</a>
+                            <a class="dropdown-item" href="#">2002</a>
+                            <a class="dropdown-item" href="#">2001</a>
+                            <a class="dropdown-item" href="#">2000</a>
+                            <a class="dropdown-item" href="#">1999</a>
+                            <a class="dropdown-item" href="#">1998</a>
+                            <a class="dropdown-item" href="#">1997</a>
+                            <a class="dropdown-item" href="#">1996</a>
+                            <a class="dropdown-item" href="#">1995</a>
+                            <a class="dropdown-item" href="#">1994</a>
+                            <a class="dropdown-item" href="#">1993</a>
+                            <a class="dropdown-item" href="#">1992</a>
+                            <a class="dropdown-item" href="#">1991</a>
+                            <a class="dropdown-item" href="#">1990</a>
+                            <a class="dropdown-item" href="#">1989</a>
+                            <a class="dropdown-item" href="#">1988</a>
+                            <a class="dropdown-item" href="#">1987</a>
+                            <a class="dropdown-item" href="#">1986</a>
+                            <a class="dropdown-item" href="#">1985</a>
+                            <a class="dropdown-item" href="#">1984</a>
+                            <a class="dropdown-item" href="#">1983</a>
+                            <a class="dropdown-item" href="#">1982</a>
+                            <a class="dropdown-item" href="#">1981</a>
+                            <a class="dropdown-item" href="#">1980</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="board" class="control-label"
+                          ><strong>Board</strong></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control ui-autocomplete-input"
+                          id="board"
+                          name="board"
+                          placeholder="e.g. CBSE"
+                          autocomplete="off"
+                          aria-required="true"
+                        />
+                      </div>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Performance Scale (Optional)</th>
+                            <th scope="col">Performance (Optional)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-outline-secondary dropdown-toggle"
+                                  type="button"
+                                  data-toggle="dropdown"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                >
+                                  Percentage
+                                </button>
+                                <div
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuButton"
+                                >
+                                  <a class="dropdown-item" href="#"
+                                    >CGPA (Scale of 10)</a
+                                  >
+                                  <a class="dropdown-item" href="#"
+                                    >CGPA (Scale of 9)</a
+                                  >
+                                  <a class="dropdown-item" href="#"
+                                    >CGPA (Scale of 8)</a
+                                  >
+                                  <a class="dropdown-item" href="#"
+                                    >CGPA (Scale of 7)</a
+                                  >
+                                  <a class="dropdown-item" href="#"
+                                    >CGPA (Scale of 6)</a
+                                  >
+                                  <a class="dropdown-item" href="#"
+                                    >CGPA (Scale of 5)</a
+                                  >
+                                  <a class="dropdown-item" href="#"
+                                    >CGPA (Scale of 4)</a
+                                  >
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="chosen-drop">
+                                <div class="chosen-search">
+                                  <input
+                                    class="chosen-search-input"
+                                    type="text"
+                                    name="stream"
+                                    placeholder="0.00"
+                                    autocomplete="off"
+                                  />
+                                </div>
+                                <ul class="chosen-results"></ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="form-group">
+                        <label
+                          for="year_of_completion"
+                          class="control-label"
+                          id="school_completion_year"
+                          ><strong>Stream (Optional)</strong></label
+                        >
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-outline-secondary dropdown-toggle"
+                            type="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            Choose Stream
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          </button>
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton"
+                          >
+                            <a class="dropdown-item" href="#">Science</a>
+                            <a class="dropdown-item" href="#">Arts</a>
+                            <a class="dropdown-item" href="#">Commerce</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="school" class="control-label">
+                          <strong>School(Optional)</strong></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control ui-autocomplete-input"
+                          id="school"
+                          name="school"
+                          placeholder="e.g. Delhi Public School"
+                          autocomplete="off"
+                        />
+                      </div>
+                      <div class="buttons_containermodal_buttoncollege_submit">
+                        <button
+                          type="submit"
+                          name="submit"
+                          class="btn btn-primary"
+                          id="college-submit"
+                        >
+                          Save
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+            <i
               class="fa fa-trash"
               aria-hidden="true"
+              data-toggle="modal"
+              data-target="#confirmation-modal"
             ></i>
+
+            <!-- The Modal -->
+            <div class="modal" id="confirmation-modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="message_container">
+                      <div
+                        class="text-heading heading_4_5"
+                        style="display: none"
+                      ></div>
+                      <div class="text-message body-main">
+                        Are you sure you want to delete this?
+                      </div>
+                      <div class="button_container">
+                        <button
+                          class="btn btn-secondary modal_secondary_btn close_action"
+                          data-dismiss="modal"
+                        >
+                          No
+                        </button>
+                        <a
+                          class="btn btn-primary modal_primary_btn yes-button close_action"
+                          data-dismiss="modal"
+                          id="confirm_work_experiences_delete_form_submit"
+                          >Yes</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </td>
         </tr>
         <tr>
           <td>JOBS</td>
           <td>
-            <a href=""><i class="fa fa-plus" aria-hidden="true"></i> Add job</a
+            <a href="81_jobdetails.html"
+              ><i class="fa fa-plus" aria-hidden="true"></i> Add job</a
             ><br /><br />
           </td>
         </tr>
@@ -125,21 +1339,335 @@
             Aug 2021 - Aug 2021
             <br /><b>Digital Marketing</b> <br />Miles Education, Virtual
             <br />Jul 2021 - Present <br /><br />
-            <a href=""
+            <a href="83_internshipdetails.html"
               ><i class="fa fa-plus" aria-hidden="true"></i> Add internship</a
             ><br /><br />
           </td>
           <td>
             &nbsp;&nbsp;
-            <i class="fa fa-pencil" aria-hidden="true"></i
-            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fa fa-trash" aria-hidden="true"></i>
+            <i
+              class="fa fa-pencil"
+              aria-hidden="true"
+              data-toggle="modal"
+              data-target="#experience-form"
+            ></i>
+
+            <!-- The Modal -->
+            <div class="modal" id="experience-form">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                  <div class="heading_4 modal-header">
+                    <span class="experience-title"
+                      ><br />
+                      <h5>
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Internship details
+                      </h5></span
+                    >
+                  </div>
+                  <div class="modal-body">
+                    <form
+                      role="form"
+                      id="experience-form"
+                      class="experience_form"
+                      method="POST"
+                      novalidate="novalidate"
+                    >
+                      <input
+                        type="hidden"
+                        id="experience_type"
+                        name="experience_type"
+                        val="job"
+                        value="job"
+                      />
+                      <input
+                        type="hidden"
+                        id="experience_id"
+                        name="experience_id"
+                        val=""
+                      />
+                      <input
+                        type="hidden"
+                        name="csrf_test_name"
+                        value="935c8278d1701fa76c050353ac543ff3"
+                        id="csrf"
+                      />
+
+                      <div class="form-group">
+                        <label for="experience_profile" class="control-label">
+                          Profile
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control ui-autocomplete-input"
+                          id="experience_profile"
+                          tabindex="1"
+                          name="experience_profile"
+                          placeholder="e.g. Sales and Marketing"
+                          autocomplete="off"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="organization" class="control-label">
+                          Organization
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control ui-autocomplete-input"
+                          id="experience_organization"
+                          tabindex="2"
+                          name="experience_organization"
+                          placeholder="e.g. Internshala"
+                          autocomplete="off"
+                        />
+                      </div>
+                      <div class="form-group location_container">
+                        <label for="experience_location" class="control-label">
+                          Location
+                        </label>
+                        <input
+                          type="hidden"
+                          class="experience_location"
+                          name="experience_location_location_id"
+                          id="experience_location_location_id"
+                          value=""
+                        />
+                        <input
+                          type="text"
+                          class="form-control ui-autocomplete-input"
+                          id="experience_location"
+                          tabindex="3"
+                          name="experience_location"
+                          placeholder="e.g. Mumbai"
+                          value=""
+                          autocomplete="off"
+                        />
+                        <div
+                          class="loading_spinner"
+                          id="loading_spinner_experience_location"
+                          style="display: none"
+                        ></div>
+                        <div id="experience_location_ui_autocomplete">
+                          <ul
+                            class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content location_autocomplete_plugin"
+                            id="ui-id-9"
+                            tabindex="0"
+                            style="display: none"
+                          ></ul>
+                        </div>
+                      </div>
+                      <div class="form-group checkbox">
+                        <div class="checkbox12">
+                          <input
+                            type="checkbox"
+                            id="experience_is_work_from_home"
+                            class="experience_is_work_from_home"
+                            name="experience_is_work_from_home"
+                            tabindex="4"
+                          />
+                          <label
+                            id="experience_is_work_from_home_label"
+                            for="experience_is_work_from_home"
+                          >
+                            Is work from home
+                          </label>
+                        </div>
+                      </div>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th scope="col">
+                              <i class="fa fa-play" aria-hidden="true"></i>
+                              Start date
+                            </th>
+                            <th scope="col">
+                              <i
+                                class="fa fa-calendar-o"
+                                aria-hidden="true"
+                              ></i>
+                              End date
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="datepicker_wrapper left">
+                                <input
+                                  id="datepicker"
+                                  width="200"
+                                  name="experience_start_date"
+                                  placeholder="Choose date"
+                                />
+                                <script>
+                                  $("#datepicker").datepicker({
+                                    uiLibrary: "bootstrap4",
+                                  });
+                                </script>
+                              </div>
+                            </td>
+
+                            <td>
+                              <div class="datepicker_wrapper left">
+                                <input
+                                  id="datepicker1"
+                                  name="experience_start_date"
+                                  placeholder="Choose date"
+                                  width="200"
+                                />
+                                <script>
+                                  $("#datepicker1").datepicker({
+                                    uiLibrary: "bootstrap4",
+                                  });
+                                </script>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <br />
+                      <div class="input-group input_group_two_sections">
+                        <div class="input_group_section form-group"></div>
+                        <div class="input_group_sectionform-group">
+                          <div class="checkboxcheckbox_inner">
+                            <div class="checkbox1">
+                              <input
+                                tabindex="7"
+                                type="checkbox"
+                                id="experience_on_going"
+                                class="check"
+                                name="experience_on_going"
+                              />
+                              <label
+                                id="experience_on_going_label"
+                                for="experience_on_going"
+                              >
+                                Currently working here
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label
+                          for="experience_description"
+                          class="control-label increase-margin"
+                        >
+                          <strong> Description</strong>
+                        </label>
+                        <span class="label_hint"
+                          ><strong>(Optional)</strong></span
+                        >
+                        <div class="alertincrease-margin">
+                          <span class="job-pro-tip">
+                            <h6 class="pro-tip">Pro tip:</h6>
+                            <ul class="tip-bullet">
+                              <li class="sub-points">
+                                Mention key internship responsibilities in max
+                                3-4 points
+                              </li>
+                              <li class="sub-points">
+                                Use action verbs: Built, Led, Drove,
+                                Conceptualized, Learnt, etc.
+                              </li>
+                            </ul>
+                          </span>
+                        </div>
+                        <div class="has_char_count">
+                          <textarea
+                            type="text"
+                            rows="4"
+                            class="form-control"
+                            tabindex="8"
+                            id="experience_description"
+                            placeholder="Short description of work done (max 250 char) "
+                            name="experience_description"
+                          ></textarea>
+                          <label
+                            class="char_count char_count_default"
+                            for="experience_description"
+                            >0/250</label
+                          >
+                        </div>
+                      </div>
+                      <div class="buttons_containermodal_button">
+                        <button
+                          class="btn btn-primary"
+                          id="internship-job-submit"
+                          tabindex="9"
+                          type="submit"
+                          name="submit"
+                        >
+                          Save
+                        </button>
+                      </div>
+                      <ul
+                        class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content"
+                        id="ui-id-10"
+                        tabindex="0"
+                        style="display: none"
+                      ></ul>
+                      <ul
+                        class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content"
+                        id="ui-id-11"
+                        tabindex="0"
+                        style="display: none"
+                      ></ul>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<i
+              class="fa fa-trash"
+              aria-hidden="true"
+              data-toggle="modal"
+              data-target="#confirmation-modal"
+            ></i>
+
+            <!-- The Modal -->
+            <div class="modal" id="confirmation-modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="message_container">
+                      <div
+                        class="text-heading heading_4_5"
+                        style="display: none"
+                      ></div>
+                      <div class="text-message body-main">
+                        Are you sure you want to delete this?
+                      </div>
+                      <div class="button_container">
+                        <button
+                          class="btn btn-secondary modal_secondary_btn close_action"
+                          data-dismiss="modal"
+                        >
+                          No
+                        </button>
+                        <a
+                          class="btn btn-primary modal_primary_btn yes-button close_action"
+                          data-dismiss="modal"
+                          id="confirm_work_experiences_delete_form_submit"
+                          >Yes</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </td>
         </tr>
         <tr>
           <td>POSITIONS OF RESPONSIBILITY</td>
           <td>
-            <a href=""
+            <a href="85_positionofresponsibility.html"
               ><i class="fa fa-plus" aria-hidden="true"></i> Add position of
               responsibility</a
             ><br /><br />
@@ -148,7 +1676,7 @@
         <tr>
           <td>TRAININGS/ COURSES</td>
           <td>
-            <a href=""
+            <a href="86_trainingdetails.html"
               ><i class="fa fa-plus" aria-hidden="true"></i> Add training/
               course </a
             ><br /><br />
@@ -157,7 +1685,7 @@
         <tr>
           <td>ACADEMICS/ PERSONAL PROJECTS</td>
           <td>
-            <a href=""
+            <a href="88_projectdetails.html"
               ><i class="fa fa-plus" aria-hidden="true"></i> Add academic/
               personal project </a
             ><br /><br />
@@ -169,27 +1697,186 @@
             <b>
               English Proficiency&nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-              <i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
-              &nbsp;&nbsp;&nbsp;<i class="fa fa-trash" aria-hidden="true"></i
-              ><br />
+              <i
+                class="fa fa-pencil"
+                aria-hidden="true"
+                data-toggle="modal"
+                data-target="#skill"
+              ></i>
+
+              <!-- The Modal -->
+              <div class="modal" id="skill">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <div class="heading_4 modal-header">
+                      <span> Skills </span>
+                    </div>
+                    <div class="modal-body">
+                      <div role="form" id="skill-form">
+                        <div class="form-group">
+                          <label for="skill" class="control-label">
+                            Add skills
+                          </label>
+                          <input
+                            type="text"
+                            class="form-control ui-autocomplete-input"
+                            id="skill"
+                            tabindex="2"
+                            name="skill"
+                            placeholder="e.g. Java"
+                            autocomplete="off"
+                            readonly="readonly"
+                            disabled="disabled"
+                            aria-describedby="popover889308"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<i
+                class="fa fa-trash"
+                aria-hidden="true"
+                data-toggle="modal"
+                data-target="#confirmation-modal"
+              ></i>
+
+              <!-- The Modal -->
+              <div class="modal" id="confirmation-modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="message_container">
+                        <div
+                          class="text-heading heading_4_5"
+                          style="display: none"
+                        ></div>
+                        <div class="text-message body-main">
+                          Are you sure you want to delete this?
+                        </div>
+                        <div class="button_container">
+                          <button
+                            class="btn btn-secondary modal_secondary_btn close_action"
+                            data-dismiss="modal"
+                          >
+                            No
+                          </button>
+                          <a
+                            class="btn btn-primary modal_primary_btn yes-button close_action"
+                            data-dismiss="modal"
+                            id="confirm_work_experiences_delete_form_submit"
+                            >Yes</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
               (Written)
             </b>
             <br />
             Advanced<br /><br />
-            <a href=""
+            <a href="89_skills.html"
               ><i class="fa fa-plus" aria-hidden="true"></i> Add Skill
             </a>
           </td>
           <td>
-            <b> MS-Excel </b>&nbsp;&nbsp; &nbsp;
-            <i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;
-            <i class="fa fa-trash" aria-hidden="true"></i><br />Intermediate
+            <b> MS-Excel </b>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;<i
+              class="fa fa-pencil"
+              aria-hidden="true"
+              data-toggle="modal"
+              data-target="#skill2"
+            ></i>
+
+            <!-- The Modal -->
+            <div class="modal" id="skill2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                  <div class="heading_4 modal-header">
+                    <span> Skills </span>
+                  </div>
+                  <div class="modal-body">
+                    <div role="form" id="skill-form2">
+                      <div class="form-group">
+                        <label for="skill" class="control-label">
+                          Add skills
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control ui-autocomplete-input"
+                          id="skill2"
+                          tabindex="2"
+                          name="skill2"
+                          placeholder="e.g. Java"
+                          autocomplete="off"
+                          readonly="readonly"
+                          disabled="disabled"
+                          aria-describedby="popover889308"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<i
+              class="fa fa-trash"
+              aria-hidden="true"
+              data-toggle="modal"
+              data-target="#confirmation-modal"
+            ></i>
+
+            <!-- The Modal -->
+            <div class="modal" id="confirmation-modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="message_container">
+                      <div
+                        class="text-heading heading_4_5"
+                        style="display: none"
+                      ></div>
+                      <div class="text-message body-main">
+                        Are you sure you want to delete this?
+                      </div>
+                      <div class="button_container">
+                        <button
+                          class="btn btn-secondary modal_secondary_btn close_action"
+                          data-dismiss="modal"
+                        >
+                          No
+                        </button>
+                        <a
+                          class="btn btn-primary modal_primary_btn yes-button close_action"
+                          data-dismiss="modal"
+                          id="confirm_work_experiences_delete_form_submit"
+                          >Yes</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            &nbsp;
+
+            <br />Intermediate
           </td>
         </tr>
         <tr>
           <td>PORTFOLIO/ WORK SAMPLES</td>
           <td>
-            <a href=""
+            <a href="92_worksamples.html"
               ><i class="fa fa-plus" aria-hidden="true"></i> Add portfolio/ work
               sample </a
             ><br /><br />
@@ -200,16 +1887,144 @@
           <td>
             Secured 1st rank in state level Asia scholarship
             <br /><br />
-            <a href=""
+            <a href="95_additionaldetails.html"
               ><i class="fa fa-plus" aria-hidden="true"></i> Add accomplishment/
               additional detail </a
             ><br /><br />
           </td>
           <td>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fa fa-pencil" aria-hidden="true"></i
-            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fa fa-trash" aria-hidden="true"></i>
+            <i
+              class="fa fa-pencil"
+              aria-hidden="true"
+              data-toggle="modal"
+              data-target="#por-form"
+            ></i>
+
+            <!-- The Modal -->
+            <div class="modal" id="por-form">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                  <div class="heading_4 modal-header">
+                    <span>
+                      <h5>
+                        &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Additional details
+                      </h5>
+                    </span>
+                  </div>
+                  <div class="modal-body">
+                    <form
+                      role="form"
+                      id="por-form"
+                      class="experience_form"
+                      method="POST"
+                      novalidate="novalidate"
+                    >
+                      <input
+                        type="hidden"
+                        name="csrf_test_name"
+                        value="eb23e15a62b7aa4ce2134f623741f9ea"
+                        id="csrf"
+                      />
+                      <input
+                        type="hidden"
+                        name="type"
+                        value="position_of_responsibility"
+                      />
+                      <input
+                        type="hidden"
+                        id="position-of-responsibility-id"
+                        name="id"
+                        value=""
+                      />
+                      <div class="form-group">
+                        <label
+                          for="other_experiences_por_description"
+                          class="control-label"
+                        >
+                          <b
+                            >Add your accomplishments such as rewards,
+                            recognitions, test scores, certifications, etc.
+                            here. You may also add information such as
+                            seminars/workshops you have attended or any
+                            interests/hobbies you have pursued.</b
+                          >
+                        </label>
+                        <div class="has_char_count">
+                          <textarea
+                            class="form-control"
+                            id="other_experiences_por_description"
+                            placeholder="E.g. Secured 1st rank among 500 entries in national level story writing competition organised by Internshala."
+                            name="description"
+                            aria-required="true"
+                          ></textarea>
+                          <label
+                            class="char_count char_count_default"
+                            for="other_experiences_por_description"
+                            >0/250</label
+                          >
+                        </div>
+                      </div>
+                      <div class="buttons_containermodal_button">
+                        <button
+                          class="btn btn-primary"
+                          id="por-submit"
+                          type="submit"
+                          name="submit"
+                        >
+                          Save
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i
+              class="fa fa-trash"
+              aria-hidden="true"
+              data-toggle="modal"
+              data-target="#confirmation-modal"
+            ></i>
+
+            <!-- The Modal -->
+            <div class="modal" id="confirmation-modal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="message_container">
+                      <div
+                        class="text-heading heading_4_5"
+                        style="display: none"
+                      ></div>
+                      <div class="text-message body-main">
+                        Are you sure you want to delete this?
+                      </div>
+                      <div class="button_container">
+                        <button
+                          class="btn btn-secondary modal_secondary_btn close_action"
+                          data-dismiss="modal"
+                        >
+                          No
+                        </button>
+                        <a
+                          class="btn btn-primary modal_primary_btn yes-button close_action"
+                          data-dismiss="modal"
+                          id="confirm_work_experiences_delete_form_submit"
+                          >Yes</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </td>
         </tr>
       </table>
