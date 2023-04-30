@@ -1,0 +1,17 @@
+.category_card{
+    margin-top: 50px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 0 1px #eee;
+    box-shadow: 0 0 4px rgb(72 72 72 / 12%), 0 2px 2px rgb(72 72 72 / 8%);
+    padding: 15px 16px 20px;
+    background:#F8F8F8;
+}
+.heading.heading_2_4{
+    margin-top: 80px;
+    text-align: center;
+}
+.icon_image{
+    margin-left: 90px;
+}
